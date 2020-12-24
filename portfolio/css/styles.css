@@ -38,18 +38,3 @@
         margin: auto;
     }
 }
-
-.projectTitle:hover, .projectThumbnail:hover
-{
-    cursor: pointer;
-}
-
-.projectTitle:hover
-{
-    color: cyan;
-}
-
-.img-thumbnail:hover
-{
-    background-color: cyan;
-}

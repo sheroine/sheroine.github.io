@@ -1,17 +1,20 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/b71450042c.js" crossorigin="anonymous"></script>
 
   <link href="../css/color.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 
   <title>Mandy's Portfolio</title>
@@ -21,10 +24,12 @@
   <!-- nav bar -->
   <nav class="navbar sticky-top navbar-expand-lg navbar-light">
     <div class="container-lg">
-      <a class="navbar-brand" href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Brand</a>
+      <a class="navbar-brand" href="#"
+        onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Brand</a>
 
       <!-- sandwich button for collasped nav bar in small windows -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -42,7 +47,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Resume</a>
           </li>
-          
+
           <li class="nav-item">
             <a class="nav-link" href="#footer">Contacts</a>
           </li>
@@ -53,359 +58,491 @@
 
   <main>
     <div id="content" class="container-lg">
-        <p>Site work in progress!</p>
+      <p>Site work in progress!</p>
 
-        <!-- Academic projects -->
-        <!-- Project 1: Cup o' Curios-->
-        <div id="CoC" class="project">
-          <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#CoCModal">Cup o' Curios</h3>
-          <img src="media/cupocurios/thumbnail.png" alt="Cup o' Curios thumbnail" class="projectThumbnail img-thumbnail" data-bs-toggle="modal" data-bs-target="#CoCModal">
-          <p class="projectDescription">
-            Cup o' Curios is a game prototype about finding the right combinations of ingredients to make the right potions for customers. It takes after various cooking games like Diner Dash, and mainly inspired by the Cook Serve Delicious series.
-            <br><br>
-            Nov - Dec 2020
-          </p>
-        </div>
+      <!-- Academic projects -->
+      <!-- Project 1: Cup o' Curios-->
+      <div id="CoC" class="project">
+        <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#CoCModal">Cup o' Curios</h3>
+        <img src="media/cupocurios/thumbnail.png" alt="Cup o' Curios thumbnail" class="projectThumbnail img-thumbnail"
+          data-bs-toggle="modal" data-bs-target="#CoCModal">
+        <p class="projectDescription">
+          Cup o' Curios is a game prototype about finding the right combinations of ingredients to make the right
+          potions for customers. It takes after various cooking games like Diner Dash, and mainly inspired by the Cook
+          Serve Delicious series.
+          <br><br>
+          Nov - Dec 2020
+        </p>
+      </div>
 
-        <!-- CoC Modal -->
-        <div class="modal fade" id="CoCModal" tabindex="-1" aria-labelledby="CoCModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
+      <!-- CoC Modal -->
+      <div class="modal fade" id="CoCModal" tabindex="-1" aria-labelledby="CoCModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
               <h5 class="modal-title" id="CoCModalLabel">Cup o' Curios</h5>
 
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
+            </div>
 
-              <div class="modal-body">
-                <!-- carousel -->
-                <div id="CoCcarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-                  <ol class="carousel-indicators">
-                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="2"></li>
-                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="3"></li>
-                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="4"></li>
-                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="5"></li>
-                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="6"></li>
-                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="7"></li>
-                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="8"></li>
-                  </ol>
+            <div class="modal-body">
+              <!-- carousel -->
+              <div id="CoCcarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#CoCcarousel" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#CoCcarousel" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#CoCcarousel" data-bs-slide-to="2"></li>
+                  <li data-bs-target="#CoCcarousel" data-bs-slide-to="3"></li>
+                  <li data-bs-target="#CoCcarousel" data-bs-slide-to="4"></li>
+                  <li data-bs-target="#CoCcarousel" data-bs-slide-to="5"></li>
+                  <li data-bs-target="#CoCcarousel" data-bs-slide-to="6"></li>
+                  <li data-bs-target="#CoCcarousel" data-bs-slide-to="7"></li>
+                  <li data-bs-target="#CoCcarousel" data-bs-slide-to="8"></li>
+                </ol>
 
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="media/cupocurios/gamemenu.png" class="d-block w-100" alt="game menu">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/cupocurios/menudesign.png" class="d-block w-100" alt="game menu design">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/cupocurios/game.png" class="d-block w-100" alt="game interface">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/cupocurios/ingredients.png" class="d-block w-100" alt="ingredients close up">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/cupocurios/mixingbowl.png" class="d-block w-100" alt="mixing bowl with ingredients">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/cupocurios/mixture.png" class="d-block w-100" alt="stirred cyan mixture">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/cupocurios/potion.png" class="d-block w-100" alt="cyan potion">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/cupocurios/customers.png" class="d-block w-100" alt="customer and orders">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/cupocurios/boxart.png" class="d-block w-100" alt="PS4 box art">
-                    </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="media/cupocurios/gamemenu.png" class="d-block w-100" alt="game menu">
                   </div>
-
-                  <a class="carousel-control-prev" href="#CoCcarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#CoCcarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </a>
+                  <div class="carousel-item">
+                    <img src="media/cupocurios/menudesign.png" class="d-block w-100" alt="game menu design">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/cupocurios/game.png" class="d-block w-100" alt="game interface">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/cupocurios/ingredients.png" class="d-block w-100" alt="ingredients close up">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/cupocurios/mixingbowl.png" class="d-block w-100" alt="mixing bowl with ingredients">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/cupocurios/mixture.png" class="d-block w-100" alt="stirred cyan mixture">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/cupocurios/potion.png" class="d-block w-100" alt="cyan potion">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/cupocurios/customers.png" class="d-block w-100" alt="customer and orders">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/cupocurios/boxart.png" class="d-block w-100" alt="PS4 box art">
+                  </div>
                 </div>
 
-                  <h4>More about the game</h4>
-                  <p>
-                    This game prototype was done in a little more than a month. It's setting and mechanics are based on the Dresden Files univserse, specifically how potions are made in that universe as our game is about making potions.
-                    <br><br>
-                    Players would have to guess the right ingredient combinations to make potions requested by their customers based on the attributes and nature of provided ingredients and requested potions.
-                    <br>
-                    It will be confusing to start when the player is still trying to find the potion recipies. But once the player gets them, it's all about speed and memory, to serve as many customers as possible to earn lots of money by the end of the day. Then try to break their own highest records of cash earned.
-                  </p>
-                  
-                  <h4>My work</h4>
-                  <p>
-                    This project is a group project of 4 people. I was responsible for making all of the art and assets for this project, then implementing them as spritesheets in Unity.
-                    <br>
-                    We were required to submit box art for our prototype even if it's PC only. So we were allowed to choose a different platform that does distrubute games with physical boxes and design one for that, thus a PS4 box art for our PC game.
-                    <br><br>
-                    There are 24 ingredient types on the table, and they each have their own "piece image" asset that appears in the mixing bowl. The stirred mixture is a white and grey image placed in between the front and back of the bowl assets, then tinted in game to reflect the type of potion made by the player. The table is made with help of texture stamps to reflect their material types.
-                    <br>
-                    The customers all have the same figure, in the same cloak with different colors, then mix and matched 4 types of skin color, hair styles, and eyes. This was done because I was running out of time to make more varied assets by the end of the project, so we had to settle with similar looking customers instead of a diverse cast. The cloak also unfortunately wasn't the best clothing style for this game's people, since the Dresden Files universe is set in the modern US.
-                    <br><br>
-                    The menu art was based on the idea that this potion shop the player runs is located underground. So I imagined that the shop is in some secret underground facility with a bunch of corridors, where other magic users could rent out the rooms provided there and do whatever they please. And the menu art is the door to the shop, with it's name and some art spray painted onto the wall and door directly.
-                    <br>
-                    It was really hard to find reference images that had indoor storefronts that don't have any windows, since we decided that the shop wouldn't have windows for being underground. Or just underground facilities that had the right feel or elements I wanted to find in general. I found exactly 1 image of a door to a bar down a corridor with minimal wall art that expressed some liveliness and gave me the right vibe for an underground society that isn't abandoned.
-                    <br><br>
-                    A rainbow potion being poured into a bottle while magic is shoved into it, depicted by the cyan and purple particles and aura, is the design of the box art. The idea of "rainbow potion being poured into a bottle" was suggested by my groupmate since it is a simplier design, and because he saw that I was struggling to keep up with my projects piling up by the end of the semester. I didn't have my own design thought of either, and was frankly getting burnt out due to the end of semester crunch. So I took that suggestion, added some magic to it since it's a big part of our game, and managed to make it look great in the end. I also have to admit, liquid surfaces are <i>quite the challenge</i> to shade.
-                    <br><br>
-                    All the art is done using Krita.
-                  </p>
+                <a class="carousel-control-prev" href="#CoCcarousel" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#CoCcarousel" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
               </div>
 
-              <div class="modal-footer">
+              <h4>More about the game</h4>
+              <p>
+                This game prototype was done in a little more than a month. It's setting and mechanics are based on the
+                Dresden Files univserse, specifically how potions are made in that universe as our game is about making
+                potions.
+                <br><br>
+                Players would have to guess the right ingredient combinations to make potions requested by their
+                customers based on the attributes and nature of provided ingredients and requested potions.
+                <br>
+                It will be confusing to start when the player is still trying to find the potion recipies. But once the
+                player gets them, it's all about speed and memory, to serve as many customers as possible to earn lots
+                of money by the end of the day. Then try to break their own highest records of cash earned.
+              </p>
+
+              <h4>My work</h4>
+              <p>
+                This project is a group project of 4 people. I was responsible for making all of the art and assets for
+                this project, then implementing them as spritesheets in Unity.
+                <br>
+                We were required to submit box art for our prototype even if it's PC only. So we were allowed to choose
+                a different platform that does distrubute games with physical boxes and design one for that, thus a PS4
+                box art for our PC game.
+                <br><br>
+                There are 24 ingredient types on the table, and they each have their own "piece image" asset that
+                appears in the mixing bowl. The stirred mixture is a white and grey image placed in between the front
+                and back of the bowl assets, then tinted in game to reflect the type of potion made by the player. The
+                table is made with help of texture stamps to reflect their material types.
+                <br>
+                The customers all have the same figure, in the same cloak with different colors, then mix and matched 4
+                types of skin color, hair styles, and eyes. This was done because I was running out of time to make more
+                varied assets by the end of the project, so we had to settle with similar looking customers instead of a
+                diverse cast. The cloak also unfortunately wasn't the best clothing style for this game's people, since
+                the Dresden Files universe is set in the modern US.
+                <br><br>
+                The menu art was based on the idea that this potion shop the player runs is located underground. So I
+                imagined that the shop is in some secret underground facility with a bunch of corridors, where other
+                magic users could rent out the rooms provided there and do whatever they please. And the menu art is the
+                door to the shop, with it's name and some art spray painted onto the wall and door directly.
+                <br>
+                It was really hard to find reference images that had indoor storefronts that don't have any windows,
+                since we decided that the shop wouldn't have windows for being underground. Or just underground
+                facilities that had the right feel or elements I wanted to find in general. I found exactly 1 image of a
+                door to a bar down a corridor with minimal wall art that expressed some liveliness and gave me the right
+                vibe for an underground society that isn't abandoned.
+                <br><br>
+                A rainbow potion being poured into a bottle while magic is shoved into it, depicted by the cyan and
+                purple particles and aura, is the design of the box art. The idea of "rainbow potion being poured into a
+                bottle" was suggested by my groupmate since it is a simplier design, and because he saw that I was
+                struggling to keep up with my projects piling up by the end of the semester. I didn't have my own design
+                thought of either, and was frankly getting burnt out due to the end of semester crunch. So I took that
+                suggestion, added some magic to it since it's a big part of our game, and managed to make it look great
+                in the end. I also have to admit, liquid surfaces are <i>quite the challenge</i> to shade.
+                <br><br>
+                All the art is done using Krita.
+              </p>
+            </div>
+
+            <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-            </div>
-        </div>
-
-        <!-- Project 2: WoodWhisked -->
-        <div id="ww" class="project">
-          <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#wwModal">WoodWhisked</h3>
-          <img src="media/woodwhisked/thumbnail.png" alt="WoodWhisked thumbnail" class="projectThumbnail img-thumbnail" data-bs-toggle="modal" data-bs-target="#wwModal">
-          <p class="projectDescription">
-            WoodWhisked is a game prototype about a theurgist hunter finding their way out of a magical forest after getting transported deep into it. It's main inspration is from Rust Bucket.
-            <br><br>
-            October 2020
-          </p>
-        </div>
-
-        <!-- WW Modal -->
-        <div class="modal fade" id="wwModal" tabindex="-1" aria-labelledby="wwModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="wwModalLabel">WoodWhisked</h5>
-
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-
-              <div class="modal-body">
-                  <!-- carousel -->
-                  <div id="wwcarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-                    <ol class="carousel-indicators">
-                      <li data-bs-target="#wwcarousel" data-bs-slide-to="0" class="active"></li>
-                      <li data-bs-target="#wwcarousel" data-bs-slide-to="1"></li>
-                      <li data-bs-target="#wwcarousel" data-bs-slide-to="2"></li>
-                      <li data-bs-target="#wwcarousel" data-bs-slide-to="3"></li>
-                      <li data-bs-target="#wwcarousel" data-bs-slide-to="4"></li>
-                      <li data-bs-target="#wwcarousel" data-bs-slide-to="5"></li>
-                      <li data-bs-target="#wwcarousel" data-bs-slide-to="6"></li>
-                      <li data-bs-target="#wwcarousel" data-bs-slide-to="7"></li>
-                    </ol>
-  
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="media/woodwhisked/gamemenu.png" class="d-block w-100" alt="game menu">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="media/woodwhisked/menuart.png" class="d-block w-100" alt="game menu design">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="media/woodwhisked/endrune.png" class="d-block w-100" alt="end tile rune">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="media/woodwhisked/boarNpowerups.png" class="d-block w-100" alt="boar enemies and power up icons in top left corner">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="media/woodwhisked/inactiverune.png" class="d-block w-100" alt="inactive pressure plate rune">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="media/woodwhisked/activerune.png" class="d-block w-100" alt="active pressure plate rune">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="media/woodwhisked/treesquid.png" class="d-block w-100" alt="tree squid enemy">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="media/woodwhisked/boxart.png" class="d-block w-100" alt="PS4 box art">
-                      </div>
-                    </div>
-
-                    <a class="carousel-control-prev" href="#wwcarousel" role="button" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#wwcarousel" role="button" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </a>
-                  </div>
-
-                  <h4>More about the game</h4>
-                  <p>
-                    This game prototype was done in a month. It's setting and mechanics are based on the Ethshar universe, specifically theurgy as the form of magic that the player character uses, and the treesquid as an enemy, which is a cannonical creature in the Ethshar universe.
-                    <br><br>
-                    WoodWhisked is a tile based, casual adventure puzzle game. Players would have to navigate to the end tile, which is a cyan colored rune, to complete the level and proceed to the next. Along the way there would be enemies, like the boar and the treesquid, that would hurt the player on contact and restart the level. Players would have to utilise their remaining arrows from their hunting trip, and their theurgy abilities to safely navigate the forest and reach their end goal.
-                    <br><br>
-                    Our game is also turn based, where enemies will not make their turn until the player does, therefore the player can take their time to think of their next moves, and observe enemy behaviour and movement patterns. Boars will move 1 tile every 2 turns and try to ram into the player, while the tree squid is stationary. Originally it was planned that the treesquid would hide in their tree until the player gets close enough, then attack the player when they are in the tiles adjacent to the tree. However we ran out of time to implement that.
-                    <br><br>
-                    Currently we have implemented 4 levels, 2 enemy types, shooting arrows, and 1 theurgy ability. There were more enemies and theurgy abilities planned during development, but we weren't able to implement all of them due to the time constrain. Entities are also unfortunately unanimated.
-                  </p>
-                  
-                  <h4>My work</h4>
-                  <p>
-                    This project is a group project of 4 people. I was responsible for making all of the art and assets for this project, then implementing them as spritesheets in Unity.
-                    <br>
-                    We were required to submit box art for our prototype even if it's PC only. So we were allowed to choose a different platform that does distrubute games with physical boxes and design one for that, thus a PS4 box art for our PC game.
-                    <br><br>
-                    All the tiles in the game are 64px squares. Grass and path tiles all connect with each other seamlessly. The flora consists of 2 types of trees, tree stumps, fallen logs, and bushes. Due to the time constrain, and this being a prototype, these tile assets are rather simple and has no shading done on them so I could save time and get them done as quickly as possible.
-                    <br>
-                    The entities have more detail though, especially the player character, where their design has to reflect that they are a theurgist hunter. The white handprint on their hood and quiver, alongside the gold trim of their robe are what theurgists wear in the Ethshar universe. Though as a hunter, they would have to blend into the environment as well, thus their robe being green instead of white. The player character's design was a fun mix and match of 2 roles and their respective attire and symbols.
-                    <br><br>
-                    Rune tiles were designed with reference to magic circles and rune symbols. The end tile had a bunch of symbols drawn in it that mostly relate to "teleportation", "nature", "wind", and "home". That's because the player character wishes to find their way out of the forest and back home, and a change of location (to next level) suggests teleportation of some sort. The green "pressure plate" rune was mostly designed on the idea of an eye, where it's like something is awakened and it opens its eyes. But since it's a rune, they are drawings or inscriptions, so the eye doesn't open or close, but the glowing parts reflect its current state instead.
-                    <br><br>
-                    Ability icons on the top left have 2 different outline colors because of their different nature. Using your bow and arrow is a normal physical skill, so it has a plain black outline. While the leap ability, along with 2 other unimplemented abilities, have a light yellow outline that has a bit of an inner glow to show that they are theurgy abilities and relating to magic.
-                    <br>
-                    The buttons were also designed by me, and they are a 9-sliced sprite. They are designed to look fancy, are green and gold to reflect the player character's robe colors, and look like vines of a sort due to the game's setting in a magical forest.
-                    <br><br>
-                    The menu art is of the forest the player character is situated in: a dense and mysterious forest. The box art features the player, a hidden treesquid, and an unimplemented enemy called a mizagar, where only its red menacing eyes are seen. Mizagars are another cannonical creature in the Ethshar universe, and would have been a great and challenging enemy to face, but as mentioned above, we didn't have the time to implement it, so I added it to the box design as an homage.
-                    <br>
-                    A mizagar is said to be really hard to detect, and nearly invisible at night, therefore only their eyes were drawn in the design. Humans are also their preferred food, thus I made the eyes menacing, to show that they are a threat to the player character. While the mizagar isn't in our prototype, having it in the box art as a lurking danger better reflects the tone and mood of our game, and letting potential consumers know what they're getting into whie looking at the game box to decide whether or not to buy it.
-                    <br>
-                    One small unfortunate note about the box art though, I was rushing to complete it and in the heat of it forgot to add the game name to the spine.
-                    <br><br>
-                    All the art is done using Krita.
-                  </p>
-              </div>
-
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Project 3: Audio Visualizer / Just Visuals and Audio -->
-        <div id="jvaa" class="project">
-          <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#jvaaModal">Audio Visualizer / Just Visuals and Audio</h3>
-          <img src="media/audiovisualizer/thumbnail.png" alt="Audio Visualizer thumbnail" class="projectThumbnail img-thumbnail" data-bs-toggle="modal" data-bs-target="#jvaaModal">
-          <p class="projectDescription">
-            We were tasked to make an audio visualizer for this project, where users can control some of the visual and audio effects. Then we decided to gamify it, and make it work like the game Just Shapes and Beats.
-            <br><br>
-            Feb - Mar 2020
-          </p>
-        </div>
+      <!-- Project 2: WoodWhisked -->
+      <div id="ww" class="project">
+        <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#wwModal">WoodWhisked</h3>
+        <img src="media/woodwhisked/thumbnail.png" alt="WoodWhisked thumbnail" class="projectThumbnail img-thumbnail"
+          data-bs-toggle="modal" data-bs-target="#wwModal">
+        <p class="projectDescription">
+          WoodWhisked is a game prototype about a theurgist hunter finding their way out of a magical forest after
+          getting transported deep into it. It's main inspration is from Rust Bucket.
+          <br><br>
+          October 2020
+        </p>
+      </div>
 
-        <!-- JVAA Modal -->
-        <div class="modal fade" id="jvaaModal" tabindex="-1" aria-labelledby="jvaaModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="jvaaModalLabel">Audio Visualizer / Just Visuals and Audio</h5>
+      <!-- WW Modal -->
+      <div class="modal fade" id="wwModal" tabindex="-1" aria-labelledby="wwModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="wwModalLabel">WoodWhisked</h5>
 
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
 
-              <div class="modal-body">
-                <!-- carousel -->
-                <div id="jvaacarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-                  <ol class="carousel-indicators">
-                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="2"></li>
-                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="3"></li>
-                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="4"></li>
-                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="5"></li>
-                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="6"></li>
-                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="7"></li>
-                  </ol>
+            <div class="modal-body">
+              <!-- carousel -->
+              <div id="wwcarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#wwcarousel" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#wwcarousel" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#wwcarousel" data-bs-slide-to="2"></li>
+                  <li data-bs-target="#wwcarousel" data-bs-slide-to="3"></li>
+                  <li data-bs-target="#wwcarousel" data-bs-slide-to="4"></li>
+                  <li data-bs-target="#wwcarousel" data-bs-slide-to="5"></li>
+                  <li data-bs-target="#wwcarousel" data-bs-slide-to="6"></li>
+                  <li data-bs-target="#wwcarousel" data-bs-slide-to="7"></li>
+                </ol>
 
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="media/audiovisualizer/initialpage.png" class="d-block w-100" alt="initial appearance of page">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/audiovisualizer/controlsopen.png" class="d-block w-100" alt="opened controls panel and playing music">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/audiovisualizer/gradientgreenwave.png" class="d-block w-100" alt="showing waveform in green gradient">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/audiovisualizer/invertrainbow.png" class="d-block w-100" alt="showing rainbow with inverted colors">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/audiovisualizer/audiotweak.png" class="d-block w-100" alt="showing waveform with audio effects tweaked">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/audiovisualizer/gamify.png" class="d-block w-100" alt="gamified">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/audiovisualizer/playerstats.png" class="d-block w-100" alt="player select and stats">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/audiovisualizer/controls.png" class="d-block w-100" alt="controls panel">
-                    </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="media/woodwhisked/gamemenu.png" class="d-block w-100" alt="game menu">
                   </div>
-
-                  <a class="carousel-control-prev" href="#jvaacarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#jvaacarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </a>
+                  <div class="carousel-item">
+                    <img src="media/woodwhisked/menuart.png" class="d-block w-100" alt="game menu design">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/woodwhisked/endrune.png" class="d-block w-100" alt="end tile rune">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/woodwhisked/boarNpowerups.png" class="d-block w-100"
+                      alt="boar enemies and power up icons in top left corner">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/woodwhisked/inactiverune.png" class="d-block w-100"
+                      alt="inactive pressure plate rune">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/woodwhisked/activerune.png" class="d-block w-100" alt="active pressure plate rune">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/woodwhisked/treesquid.png" class="d-block w-100" alt="tree squid enemy">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/woodwhisked/boxart.png" class="d-block w-100" alt="PS4 box art">
+                  </div>
                 </div>
 
-                <h4>More about the project</h4>
-                <p>
-                  Currently there are 3 tracks for selection, and each track has differnet visual elements. Visual elements include poppers, blips, moving Bezier curves, and audio data.
-                  <br>
-                  Bars are used to present audio data, and users can pick between viewing the music's frequencies or waveform. It is shown on all 3 tracks, is behind and slightly dimmer than other visual elements.
-                  <br>
-                  Poppers will constantly bounce around the screen, their size changes with a randomly selected frequency data node, and if cooldown is up they will pop and spawn blips if the frequency is high enough or if the previous value has large enough of a different than the current one.
-                  <br>
-                  Blips are just small circles or squares that move across the screen in a single direction and speed until they move off screen, then they disappear.
-                  <br>
-                  Moving Bezier curves can be either a regular Bezier curve or a quadradic Bezier curve. Their start and end points are stationary, but their control points will move and bounce around the screen, their speed varying with the waveform audio data, produucing Bezier curves that change shape with the music.
-                  <br>
-                  The first track consists of 2 poppers, a square and a circle one; The second track consists of 1 circle popper, and blips spawning on the right size of the canvas if the audio data has a high average; the third track consists of 5 quadradic Bezier curves in the center and 2 regular Bezier curves on the sides, along with a surprise.
-                  <br><br>
-                  Controls are provided to the user, it can be opened and collasped in the top right corner, and they can pick which music track they want to listen to, adjust the volume, visual effects, and audio effects, and pick which audio data to view.
-                  <br>
-                  Visual effects include changing the color scheme, have the color scheme be a gradient or not, toggle noise, invert colors, and show an emboss effect. Audio effects including adjusting the bass or treble effect, and toggle distortion. Unfortunately, the distortion toggle does not work because we ran out of time to figure it out.
-                  <br><br>
-                  One last control is the gamify toggle, which will turn the Audio Visualizer into Just Visuals and Audio, mimicking the music bullet hell game Just Shapes and Beats. However, this portion is notoriously unfinished, and frankly isn't a game yet. The toggle changes the heading of the page, adds a player select and stats below the play / pause button, adds a player shape to the canvas that follows the cursor, and freezes everything on the canvas when the music is paused, but that's all we managed to complete before the submission deadline.
-                  <br>
-                  This was totally the case of us biting off way more than we could chew, but also it was around the time when Covid-19 lockdowns started getting issued, and we all had to quickly switch to working completely remotely. So with all that extra stress happening, we couldn't get around to implement collision detection, which is the one and main thing that makes it a game.
-                  <br>
-                  We were planning to have keyboard controls and have a dash just like Just Shapes and Beats, but we couldn't figure out keyboard inputs at the time, so we quickly switched to having the cursor be the player since we were running out of time. We added the player stats so that players could see how many hits they took and how many dashes they did, and a ranking system based on the number of hits players took. But as mentioned above, collision detection wasn't even implemented, so none of these stats could be properly shown.
-                </p>
-                
-                <h4>My work</h4>
-                <p>
-                  We worked in pairs for this project, and both of us had to work on all parts of this project equally. My friend and I contributed to the coding, working on different classes and files at the same time. Though the idea of making a game out of an audio visualizer and picking Just Shapes and Beats as the game to mimick was my idea, since I thoroughly enjoyed that game, and got really excited at the thought that we could make something like that. (And thus got way too ambitious.)
-                  <br>
-                  I was more experienced with the mechanics of Just Shapes and Beats, so I guided my friend on what kind of visual elements we could add to this project, namely the poppers and blips. The Bezier curves were a fun addition suggested by my friend while we were wondering what simplier shape or element we could easily add and clearly represent the audio data. Then I suggested we move the curves' control points around the screen since I did that in a differentt assignment and had a lot of fun with it.
-                  <br>
-                  There is a lot of code in this project, some given by our professor, a bunch taken and refactored from our past projects, and a lot we figured out along the way. There's no clear differentiation on which parts of the code each of us did, since we did paired programming and helped each other out a lot of the times as well. I believe the only thing that was done separately was me rushing to write the css to make the page resemble Just Shapes and Beats, while my friend rushed to write the documentation for our project before submission.
-                  <br><br>
-                  This project was done entirely with Javascript, HTML, and CSS, and with help of the Canvas API, Web Audio API, and dat.GUI API.
-                  <br><br>
-                  You can check out our project <a href="https://people.rit.edu/mxw4175/330/project2/" target="_blank">here</a>!
-                </p>
+                <a class="carousel-control-prev" href="#wwcarousel" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#wwcarousel" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
               </div>
 
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
+              <h4>More about the game</h4>
+              <p>
+                This game prototype was done in a month. It's setting and mechanics are based on the Ethshar universe,
+                specifically theurgy as the form of magic that the player character uses, and the treesquid as an enemy,
+                which is a cannonical creature in the Ethshar universe.
+                <br><br>
+                WoodWhisked is a tile based, casual adventure puzzle game. Players would have to navigate to the end
+                tile, which is a cyan colored rune, to complete the level and proceed to the next. Along the way there
+                would be enemies, like the boar and the treesquid, that would hurt the player on contact and restart the
+                level. Players would have to utilise their remaining arrows from their hunting trip, and their theurgy
+                abilities to safely navigate the forest and reach their end goal.
+                <br><br>
+                Our game is also turn based, where enemies will not make their turn until the player does, therefore the
+                player can take their time to think of their next moves, and observe enemy behaviour and movement
+                patterns. Boars will move 1 tile every 2 turns and try to ram into the player, while the tree squid is
+                stationary. Originally it was planned that the treesquid would hide in their tree until the player gets
+                close enough, then attack the player when they are in the tiles adjacent to the tree. However we ran out
+                of time to implement that.
+                <br><br>
+                Currently we have implemented 4 levels, 2 enemy types, shooting arrows, and 1 theurgy ability. There
+                were more enemies and theurgy abilities planned during development, but we weren't able to implement all
+                of them due to the time constrain. Entities are also unfortunately unanimated.
+              </p>
+
+              <h4>My work</h4>
+              <p>
+                This project is a group project of 4 people. I was responsible for making all of the art and assets for
+                this project, then implementing them as spritesheets in Unity.
+                <br>
+                We were required to submit box art for our prototype even if it's PC only. So we were allowed to choose
+                a different platform that does distrubute games with physical boxes and design one for that, thus a PS4
+                box art for our PC game.
+                <br><br>
+                All the tiles in the game are 64px squares. Grass and path tiles all connect with each other seamlessly.
+                The flora consists of 2 types of trees, tree stumps, fallen logs, and bushes. Due to the time constrain,
+                and this being a prototype, these tile assets are rather simple and has no shading done on them so I
+                could save time and get them done as quickly as possible.
+                <br>
+                The entities have more detail though, especially the player character, where their design has to reflect
+                that they are a theurgist hunter. The white handprint on their hood and quiver, alongside the gold trim
+                of their robe are what theurgists wear in the Ethshar universe. Though as a hunter, they would have to
+                blend into the environment as well, thus their robe being green instead of white. The player character's
+                design was a fun mix and match of 2 roles and their respective attire and symbols.
+                <br><br>
+                Rune tiles were designed with reference to magic circles and rune symbols. The end tile had a bunch of
+                symbols drawn in it that mostly relate to "teleportation", "nature", "wind", and "home". That's because
+                the player character wishes to find their way out of the forest and back home, and a change of location
+                (to next level) suggests teleportation of some sort. The green "pressure plate" rune was mostly designed
+                on the idea of an eye, where it's like something is awakened and it opens its eyes. But since it's a
+                rune, they are drawings or inscriptions, so the eye doesn't open or close, but the glowing parts reflect
+                its current state instead.
+                <br><br>
+                Ability icons on the top left have 2 different outline colors because of their different nature. Using
+                your bow and arrow is a normal physical skill, so it has a plain black outline. While the leap ability,
+                along with 2 other unimplemented abilities, have a light yellow outline that has a bit of an inner glow
+                to show that they are theurgy abilities and relating to magic.
+                <br>
+                The buttons were also designed by me, and they are a 9-sliced sprite. They are designed to look fancy,
+                are green and gold to reflect the player character's robe colors, and look like vines of a sort due to
+                the game's setting in a magical forest.
+                <br><br>
+                The menu art is of the forest the player character is situated in: a dense and mysterious forest. The
+                box art features the player, a hidden treesquid, and an unimplemented enemy called a mizagar, where only
+                its red menacing eyes are seen. Mizagars are another cannonical creature in the Ethshar universe, and
+                would have been a great and challenging enemy to face, but as mentioned above, we didn't have the time
+                to implement it, so I added it to the box design as an homage.
+                <br>
+                A mizagar is said to be really hard to detect, and nearly invisible at night, therefore only their eyes
+                were drawn in the design. Humans are also their preferred food, thus I made the eyes menacing, to show
+                that they are a threat to the player character. While the mizagar isn't in our prototype, having it in
+                the box art as a lurking danger better reflects the tone and mood of our game, and letting potential
+                consumers know what they're getting into whie looking at the game box to decide whether or not to buy
+                it.
+                <br>
+                One small unfortunate note about the box art though, I was rushing to complete it and in the heat of it
+                forgot to add the game name to the spine.
+                <br><br>
+                All the art is done using Krita.
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Project 3: Audio Visualizer / Just Visuals and Audio -->
+      <div id="jvaa" class="project">
+        <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#jvaaModal">Audio Visualizer / Just Visuals and
+          Audio</h3>
+        <img src="media/audiovisualizer/thumbnail.png" alt="Audio Visualizer thumbnail"
+          class="projectThumbnail img-thumbnail" data-bs-toggle="modal" data-bs-target="#jvaaModal">
+        <p class="projectDescription">
+          We were tasked to make an audio visualizer for this project, where users can control some of the visual and
+          audio effects. Then we decided to gamify it, and make it work like the game Just Shapes and Beats.
+          <br><br>
+          Feb - Mar 2020
+        </p>
+      </div>
+
+      <!-- JVAA Modal -->
+      <div class="modal fade" id="jvaaModal" tabindex="-1" aria-labelledby="jvaaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="jvaaModalLabel">Audio Visualizer / Just Visuals and Audio</h5>
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+              <!-- carousel -->
+              <div id="jvaacarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#jvaacarousel" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#jvaacarousel" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#jvaacarousel" data-bs-slide-to="2"></li>
+                  <li data-bs-target="#jvaacarousel" data-bs-slide-to="3"></li>
+                  <li data-bs-target="#jvaacarousel" data-bs-slide-to="4"></li>
+                  <li data-bs-target="#jvaacarousel" data-bs-slide-to="5"></li>
+                  <li data-bs-target="#jvaacarousel" data-bs-slide-to="6"></li>
+                  <li data-bs-target="#jvaacarousel" data-bs-slide-to="7"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="media/audiovisualizer/initialpage.png" class="d-block w-100"
+                      alt="initial appearance of page">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/audiovisualizer/controlsopen.png" class="d-block w-100"
+                      alt="opened controls panel and playing music">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/audiovisualizer/gradientgreenwave.png" class="d-block w-100"
+                      alt="showing waveform in green gradient">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/audiovisualizer/invertrainbow.png" class="d-block w-100"
+                      alt="showing rainbow with inverted colors">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/audiovisualizer/audiotweak.png" class="d-block w-100"
+                      alt="showing waveform with audio effects tweaked">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/audiovisualizer/gamify.png" class="d-block w-100" alt="gamified">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/audiovisualizer/playerstats.png" class="d-block w-100"
+                      alt="player select and stats">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/audiovisualizer/controls.png" class="d-block w-100" alt="controls panel">
+                  </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#jvaacarousel" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#jvaacarousel" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
+
+              <h4>More about the project</h4>
+              <p>
+                Currently there are 3 tracks for selection, and each track has differnet visual elements. Visual
+                elements include poppers, blips, moving Bezier curves, and audio data.
+                <br>
+                Bars are used to present audio data, and users can pick between viewing the music's frequencies or
+                waveform. It is shown on all 3 tracks, is behind and slightly dimmer than other visual elements.
+                <br>
+                Poppers will constantly bounce around the screen, their size changes with a randomly selected frequency
+                data node, and if cooldown is up they will pop and spawn blips if the frequency is high enough or if the
+                previous value has large enough of a different than the current one.
+                <br>
+                Blips are just small circles or squares that move across the screen in a single direction and speed
+                until they move off screen, then they disappear.
+                <br>
+                Moving Bezier curves can be either a regular Bezier curve or a quadradic Bezier curve. Their start and
+                end points are stationary, but their control points will move and bounce around the screen, their speed
+                varying with the waveform audio data, produucing Bezier curves that change shape with the music.
+                <br>
+                The first track consists of 2 poppers, a square and a circle one; The second track consists of 1 circle
+                popper, and blips spawning on the right size of the canvas if the audio data has a high average; the
+                third track consists of 5 quadradic Bezier curves in the center and 2 regular Bezier curves on the
+                sides, along with a surprise.
+                <br><br>
+                Controls are provided to the user, it can be opened and collasped in the top right corner, and they can
+                pick which music track they want to listen to, adjust the volume, visual effects, and audio effects, and
+                pick which audio data to view.
+                <br>
+                Visual effects include changing the color scheme, have the color scheme be a gradient or not, toggle
+                noise, invert colors, and show an emboss effect. Audio effects including adjusting the bass or treble
+                effect, and toggle distortion. Unfortunately, the distortion toggle does not work because we ran out of
+                time to figure it out.
+                <br><br>
+                One last control is the gamify toggle, which will turn the Audio Visualizer into Just Visuals and Audio,
+                mimicking the music bullet hell game Just Shapes and Beats. However, this portion is notoriously
+                unfinished, and frankly isn't a game yet. The toggle changes the heading of the page, adds a player
+                select and stats below the play / pause button, adds a player shape to the canvas that follows the
+                cursor, and freezes everything on the canvas when the music is paused, but that's all we managed to
+                complete before the submission deadline.
+                <br>
+                This was totally the case of us biting off way more than we could chew, but also it was around the time
+                when Covid-19 lockdowns started getting issued, and we all had to quickly switch to working completely
+                remotely. So with all that extra stress happening, we couldn't get around to implement collision
+                detection, which is the one and main thing that makes it a game.
+                <br>
+                We were planning to have keyboard controls and have a dash just like Just Shapes and Beats, but we
+                couldn't figure out keyboard inputs at the time, so we quickly switched to having the cursor be the
+                player since we were running out of time. We added the player stats so that players could see how many
+                hits they took and how many dashes they did, and a ranking system based on the number of hits players
+                took. But as mentioned above, collision detection wasn't even implemented, so none of these stats could
+                be properly shown.
+              </p>
+
+              <h4>My work</h4>
+              <p>
+                We worked in pairs for this project, and both of us had to work on all parts of this project equally. My
+                friend and I contributed to the coding, working on different classes and files at the same time. Though
+                the idea of making a game out of an audio visualizer and picking Just Shapes and Beats as the game to
+                mimick was my idea, since I thoroughly enjoyed that game, and got really excited at the thought that we
+                could make something like that. (And thus got way too ambitious.)
+                <br>
+                I was more experienced with the mechanics of Just Shapes and Beats, so I guided my friend on what kind
+                of visual elements we could add to this project, namely the poppers and blips. The Bezier curves were a
+                fun addition suggested by my friend while we were wondering what simplier shape or element we could
+                easily add and clearly represent the audio data. Then I suggested we move the curves' control points
+                around the screen since I did that in a differentt assignment and had a lot of fun with it.
+                <br>
+                There is a lot of code in this project, some given by our professor, a bunch taken and refactored from
+                our past projects, and a lot we figured out along the way. There's no clear differentiation on which
+                parts of the code each of us did, since we did paired programming and helped each other out a lot of the
+                times as well. I believe the only thing that was done separately was me rushing to write the css to make
+                the page resemble Just Shapes and Beats, while my friend rushed to write the documentation for our
+                project before submission.
+                <br><br>
+                This project was done entirely with Javascript, HTML, and CSS, and with help of the Canvas API, Web
+                Audio API, and dat.GUI API.
+                <br><br>
+                You can check out our project <a href="https://people.rit.edu/mxw4175/330/project2/"
+                  target="_blank">here</a>!
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Project 4: Interactive Phyllotaxis -->
       <div id="p4" class="project">
         <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#p4Modal">project name</h3>
-        <img src="https://via.placeholder.com/400" alt="" class="projectThumbnail img-thumbnail" data-bs-toggle="modal" data-bs-target="#p4Modal">
+        <img src="https://via.placeholder.com/400" alt="" class="projectThumbnail img-thumbnail" data-bs-toggle="modal"
+          data-bs-target="#p4Modal">
         <p class="projectDescription">
           short description
           <br><br>
@@ -454,7 +591,7 @@
               <p>
                 aa
               </p>
-              
+
               <h4>My work</h4>
               <p>
                 aa
@@ -471,7 +608,8 @@
       <!-- Project 5: Nature Bound -->
       <div id="p5" class="project">
         <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#p5Modal">project name</h3>
-        <img src="https://via.placeholder.com/400" alt="" class="projectThumbnail img-thumbnail" data-bs-toggle="modal" data-bs-target="#p5Modal">
+        <img src="https://via.placeholder.com/400" alt="" class="projectThumbnail img-thumbnail" data-bs-toggle="modal"
+          data-bs-target="#p5Modal">
         <p class="projectDescription">
           short description
           <br><br>
@@ -520,7 +658,7 @@
               <p>
                 aa
               </p>
-              
+
               <h4>My work</h4>
               <p>
                 aa
@@ -533,39 +671,58 @@
           </div>
         </div>
       </div>
-      
+
     </div>
   </main>
 
   <footer>
     <div id="footer" class="container-lg">
       <div id="contacts">
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:mandy.wong68@gmail.com">mandy.wong68@gmail.com</a>
+        
+        <a href="mailto:mandy.wong68@gmail.com">
+          <i class="fas fa-envelope"></i>
+          mandy.wong68@gmail.com
+        </a>
 
-        <i class="fab fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/man-ting-mandy-wong-375427173/" target="_blank">Man Ting Mandy Wong</a>
-
-        <i class="fab fa-github"></i>
-        <a href="https://github.com/sheroine" target="_blank">sheroine</a>
-
-        <i class="fab fa-instagram"></i>
-        <a href="https://www.instagram.com/sheroine_" target="_blank">@sheroine_</a>
-
-        <i class="fab fa-facebook"></i>
-        <a href="https://www.facebook.com/SheroineArt/" target="_blank">@SheroineArt</a>
+        
+        <a href="https://www.linkedin.com/in/man-ting-mandy-wong-375427173/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          Man Ting Mandy Wong
+        </a>
+        
+        <a href="https://github.com/sheroine" target="_blank">
+          <i class="fab fa-github"></i>
+          sheroine
+        </a>
+        
+        <a href="https://www.instagram.com/sheroine_" target="_blank">
+          <i class="fab fa-instagram"></i>
+          @sheroine_
+        </a>
+        
+        <a href="https://www.facebook.com/SheroineArt/" target="_blank">
+          <i class="fab fa-facebook"></i>
+          @SheroineArt
+        </a>
       </div>
 
       <div id="notes">
         <p>This page is made with help of Bootstrap and Font Awesome</p>
-        <p>&copy;<script>document.write( new Date().getFullYear() );</script> Mandy Wong</p>
+        <p>&copy;
+          <script>document.write(new Date().getFullYear());</script> Mandy Wong
+        </p>
       </div>
     </div>
   </footer>
 
   <!-- boostrap scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>

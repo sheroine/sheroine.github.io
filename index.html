@@ -1,104 +1,120 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/b71450042c.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <link href="css/color.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/b71450042c.js" crossorigin="anonymous"></script>
 
-    <title>Mandy Wong</title>
-  </head>
-  <body>
-    <!-- nav bar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-        <div class="container-lg">
-          <a class="navbar-brand" href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Brand</a>
+  <link href="css/color.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/homepage.css" rel="stylesheet">
 
-          <!-- sandwich button for collasped nav bar in small windows -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <title>Mandy Wong</title>
+</head>
 
-          <!-- nav bar contents -->
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
+<body>
+  <!-- nav bar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+    <div class="container-lg">
+      <a class="navbar-brand" href="#"
+        onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Brand</a>
 
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio/index.html">Portfolio</a>
-              </li>
+      <!-- sandwich button for collasped nav bar in small windows -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Resume</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#footer">Contacts</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-      
-    <main>
-        <div id="content" class="container-lg">
-            <p>Site work in progress!</p>
-            
-            <!-- bio -->
-            <div id="name">
-                <h1>Mandy Wong</h1>
-                <p>An artist and game designer</p>
-            </div>
+      <!-- nav bar contents -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
 
-            <img src="media/avatar.png" alt="my avatar" id="avatar">
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio/index.html">Portfolio</a>
+          </li>
 
-            <div id="bio">
-                <p>
-                    I am a current Game Design and Development student at Rochester Institute of Technology. I am passionate about making games and art as I like creating works and immersive experiences that people can enjoy. During my time at RIT, I have worked on multiple game prototypes with different people in small groups. When I'm not making more art in my free time, I enjoy crocheting, listening to music, and of course playing more games.
-                </p>
-            </div>
-        </div>
-    </main>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
+          </li>
 
-    <footer>
-      <div id="footer" class="container-lg">
-        <div id="contacts">
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:mandy.wong68@gmail.com">mandy.wong68@gmail.com</a>
-
-          <i class="fab fa-linkedin"></i>
-          <a href="https://www.linkedin.com/in/man-ting-mandy-wong-375427173/" target="_blank">Man Ting Mandy Wong</a>
-
-          <i class="fab fa-github"></i>
-          <a href="https://github.com/sheroine" target="_blank">sheroine</a>
-
-          <i class="fab fa-instagram"></i>
-          <a href="https://www.instagram.com/sheroine_" target="_blank">@sheroine_</a>
-
-          <i class="fab fa-facebook"></i>
-          <a href="https://www.facebook.com/SheroineArt/" target="_blank">@SheroineArt</a>
-        </div>
-
-        <div id="notes">
-          <p>This page is made with help of Bootstrap and Font Awesome</p>
-          <p>&copy;<script>document.write( new Date().getFullYear() );</script> Mandy Wong</p>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contacts</a>
+          </li>
+        </ul>
       </div>
-    </footer>
+    </div>
+  </nav>
 
-    <!-- boostrap scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    
-  </body>
+  <main>
+    <div id="content" class="container-lg">
+      <p>Site work in progress!</p>
+
+      <!-- bio -->
+      <div id="name">
+        <h1>Mandy Wong</h1>
+        <p>An artist and game designer</p>
+      </div>
+
+      <img src="media/avatar.png" class="img-fluid" alt="my avatar" id="avatar">
+
+      <div id="bio">
+        <p>
+          I am a current Game Design and Development student at Rochester Institute of Technology. I am passionate about
+          making games and art as I like creating works and immersive experiences that people can enjoy. During my time
+          at RIT, I have worked on multiple game prototypes with different people in small groups. When I'm not making
+          more art in my free time, I enjoy crocheting, listening to music, and of course playing more games.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div id="footer" class="container-lg">
+      <div id="contacts">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:mandy.wong68@gmail.com">mandy.wong68@gmail.com</a>
+
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/man-ting-mandy-wong-375427173/" target="_blank">Man Ting Mandy Wong</a>
+
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/sheroine" target="_blank">sheroine</a>
+
+        <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/sheroine_" target="_blank">@sheroine_</a>
+
+        <i class="fab fa-facebook"></i>
+        <a href="https://www.facebook.com/SheroineArt/" target="_blank">@SheroineArt</a>
+      </div>
+
+      <div id="notes">
+        <p>This page is made with help of Bootstrap and Font Awesome</p>
+        <p>&copy;
+          <script>document.write(new Date().getFullYear());</script> Mandy Wong
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- boostrap scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>

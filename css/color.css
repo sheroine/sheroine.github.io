@@ -48,7 +48,7 @@ h1, h3, h4
     cursor: pointer;
 }
 
-.projectTitle:hover
+.projectTitle:hover, a:hover, a:focus
 {
     color: #C478C7;
 }
@@ -56,6 +56,26 @@ h1, h3, h4
 .img-thumbnail:hover
 {
     background-color: #C478C7;
+}
+
+a
+{
+    color: #8C368F;
+}
+
+footer a
+{
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #FF857B;
+}
+
+a:visited
+{
+    color: #DB5C52;
 }
 
 /* Palette color codes */

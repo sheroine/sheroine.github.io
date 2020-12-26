@@ -29,3 +29,10 @@ footer
         padding-bottom: 13rem;
     }
 }
+
+i
+{
+    font-size: 1.2rem;
+    padding-left: .5em;
+    color: black;
+}

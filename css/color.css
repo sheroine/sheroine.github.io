@@ -38,7 +38,7 @@ h1, h3, h4
     background-color: #8C368F;
 }
 
-.modal-footer button:hover
+.modal-footer button:hover, .modal-footer button:focus
 {
     background-color: #A451A7;
 }
@@ -50,12 +50,12 @@ h1, h3, h4
 
 .projectTitle:hover
 {
-    color: cyan;
+    color: #C478C7;
 }
 
 .img-thumbnail:hover
 {
-    background-color: cyan;
+    background-color: #C478C7;
 }
 
 /* Palette color codes */

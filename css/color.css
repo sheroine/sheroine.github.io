@@ -16,6 +16,11 @@ nav, .modal-header
     color: #DB5C5290;
 }
 
+.navbar-light .navbar-nav .nav-link:focus
+{
+    color: #DB5C52;
+}
+
 body, .modal-body
 {
     background-color: #FAD5E5;

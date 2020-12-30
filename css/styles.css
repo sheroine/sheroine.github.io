@@ -36,3 +36,8 @@ footer i
     padding-left: .5em;
     color: black;
 }
+
+#logo
+{
+    height: 40px;
+}

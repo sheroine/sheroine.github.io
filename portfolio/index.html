@@ -25,7 +25,9 @@
   <nav class="navbar sticky-top navbar-expand-lg navbar-light">
     <div class="container-lg">
       <a class="navbar-brand" href="#"
-        onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Brand</a>
+        onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">
+        <img id="logo" src="../media/logo.svg">
+      </a>
 
       <!-- sandwich button for collasped nav bar in small windows -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -376,7 +378,7 @@
           class="projectThumbnail img-thumbnail" data-bs-toggle="modal" data-bs-target="#jvaaModal">
         <p class="projectDescription">
           We were tasked to make an audio visualizer for this project, where users can control some of the visual and
-          audio effects. Then we decided to gamify it, and make it work like the game Just Shapes and Beats.
+          audio effects. Then we decided to gamify it, and make it play similar to the game Just Shapes and Beats.
           <br><br>
           Feb - Mar 2020
         </p>
@@ -466,10 +468,10 @@
                 <br>
                 Moving Bezier curves can be either a regular Bezier curve or a quadradic Bezier curve. Their start and
                 end points are stationary, but their control points will move and bounce around the screen, their speed
-                varying with the waveform audio data, produucing Bezier curves that change shape with the music.
+                varying with the waveform audio data, producing Bezier curves that change shape with the music.
                 <br>
                 The first track consists of 2 poppers, a square and a circle one; The second track consists of 1 circle
-                popper, and blips spawning on the right size of the canvas if the audio data has a high average; the
+                popper, and blips spawning from the right size of the canvas if the audio data has a high average; the
                 third track consists of 5 quadradic Bezier curves in the center and 2 regular Bezier curves on the
                 sides, along with a surprise.
                 <br><br>
@@ -539,33 +541,33 @@
       </div>
 
       <!-- Project 4: Interactive Phyllotaxis -->
-      <div id="p4" class="project">
-        <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#p4Modal">project name</h3>
+      <div id="inPhy" class="project">
+        <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#inPhyModal">Interactive Phyllotaxis</h3>
         <img src="https://via.placeholder.com/400" alt="" class="projectThumbnail img-thumbnail" data-bs-toggle="modal"
-          data-bs-target="#p4Modal">
+          data-bs-target="#inPhyModal">
         <p class="projectDescription">
-          short description
+          In this project we had to use the phyllotaxis mathematical formula to create an artistic interactive experience. Users can click to create sprials on the canvas, and have a multitude of controls to change how the sprials grow on the fly.
           <br><br>
-          date
+          February 2020
         </p>
       </div>
 
       <!-- Modal -->
-      <div class="modal fade" id="p4Modal" tabindex="-1" aria-labelledby="p4ModalLabel" aria-hidden="true">
+      <div class="modal fade" id="inPhyModal" tabindex="-1" aria-labelledby="inPhyModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="p4ModalLabel">project name</h5>
+              <h5 class="modal-title" id="inPhyModalLabel">Interactive Phyllotaxis</h5>
 
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body">
               <!-- carousel -->
-              <div id="p4carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+              <div id="inPhycarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
                 <ol class="carousel-indicators">
-                  <li data-bs-target="#p4carousel" data-bs-slide-to="0" class="active"></li>
-                  <li data-bs-target="#p4carousel" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#inPhycarousel" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#inPhycarousel" data-bs-slide-to="1"></li>
                 </ol>
 
                 <div class="carousel-inner">
@@ -577,11 +579,11 @@
                   </div>
                 </div>
 
-                <a class="carousel-control-prev" href="#p4carousel" role="button" data-bs-slide="prev">
+                <a class="carousel-control-prev" href="#inPhycarousel" role="button" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#p4carousel" role="button" data-bs-slide="next">
+                <a class="carousel-control-next" href="#inPhycarousel" role="button" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </a>
@@ -589,12 +591,19 @@
 
               <h4>More about the project</h4>
               <p>
-                aa
+                Phyllotaxis is related to botany and refers to the arrangement of leaves on a plant stem, it is also seen in plants that grow in sprial patterns. This project uses one of the mathematical formula proposed by Vogel to obtain the polar coordinates of successive florets, where the divergence angle would determine what pattern would result.
+                <br><br>
+                Users will click on the canvas and a sprial will start growing from that point, and there can be multiple flowers / sprials growing at once. Controls include flower size, petal padding, petal size, divergence angle, petal shape and color, and toggle lines drawn between petals and their color. Users can also pause and play the growth of flowers, change the background color of the canvas, save their creations to their computer, and reset the canvas.
+                <br>
+                Flower size affects the number of dots drawn in a spawned sprial; petal padding affects the space between each petal; petal size is just the size of each dot. The divergence angle as mentioned above is what changes the type of sprial the dots will be drawn in. Changing the value of it by even 0.5 will result in a completely different sprial pattern. By default petals are circles, but if users uncheck that option they will get square petals, however they won't rotate based on their position. Lines are unchecked by default, they are drawn from the previous dot to the next dot if checked. Both petals and lines have a separate color picker for changing their color.
+                <br>
+                All of these controls will affect flowers that are currently still growing on the canvas, so users can make a single flower have petals with multiple colors, petal sizes and shapes, and even change the type of sprial with the divergence angle halfway through. This is where the play pause buttons come in handy, where users can pause the canvas and have all the time they needed to change the flower parameters, then play it again and see all the new changes at once. Flowers can still be initiated by clicking when the canvas is paused, however I did not think of having an indication for that during development. It was suggested to me after it was submitted that I could have drawn the first dot for the sprial when the canvas is paused. So currently it would look like nothing happened when the canvas is clicked when it's paused, then all the flowers will bloom together once the play button is pressed, and I understand this would definitely confuse users at first.
               </p>
 
               <h4>My work</h4>
               <p>
-                aa
+                You can check out my project <a href="https://people.rit.edu/mxw4175/330/project1/"
+                  target="_blank">here</a>!
               </p>
             </div>
 

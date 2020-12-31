@@ -1,0 +1,43 @@
+html
+{
+    /* makes page extend to bottom */
+    height: 100%;
+}
+
+body
+{
+    /* the padding bottom is the thing that gives enough space at the bottom so that when the footer gets taller it wont overlap other content akfjwpoigajwiwj */
+    /* but somewhat brute force? is work around ig*/
+    position: relative;
+    padding-bottom: 8rem;
+    min-height: 100%;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px)
+{
+    body
+    {
+        padding-bottom: 13rem;
+    }
+}
+
+footer i
+{
+    font-size: 1.2rem;
+    padding-left: .5em;
+    color: black;
+}
+
+#logo
+{
+    height: 40px;
+}

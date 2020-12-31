@@ -1,43 +1,47 @@
-html
+#content
 {
-    /* makes page extend to bottom */
-    height: 100%;
+    display: grid;
+    gap: 1em;
+    grid-template-areas: 
+        "avatar  name"
+        "avatar  bio"
+        "avatar  bio"
+        "avatar  bio";
+
+    margin: 2em auto;
 }
 
-body
+#name
 {
-    /* the padding bottom is the thing that gives enough space at the bottom so that when the footer gets taller it wont overlap other content akfjwpoigajwiwj */
-    /* but somewhat brute force? is work around ig*/
-    position: relative;
-    padding-bottom: 8rem;
-    min-height: 100%;
-}
-
-footer
-{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding-top: 1rem;
+    grid-area: name;
+    margin: auto;
     text-align: center;
+}
+
+#avatar
+{
+    grid-area: avatar;
+}
+
+#bio
+{
+    grid-area: bio;
 }
 
 @media only screen and (max-width: 768px)
 {
-    body
+    #content
     {
-        padding-bottom: 13rem;
+        display: grid;
+        gap: 1em;
+        grid-template-areas:
+            "name"
+            "avatar"
+            "bio";
     }
-}
 
-footer i
-{
-    font-size: 1.2rem;
-    padding-left: .5em;
-    color: black;
-}
-
-#logo
-{
-    height: 40px;
+    #avatar
+    {
+        margin: auto;
+    }
 }

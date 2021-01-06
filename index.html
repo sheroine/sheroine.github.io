@@ -27,7 +27,7 @@
     <div class="container-lg">
       <a class="navbar-brand" href="#"
         onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">
-        <img id="logo" src="../media/logo.svg">
+        <img id="logo" src="media/logo.svg">
       </a>
 
       <!-- sandwich button for collasped nav bar in small windows -->
@@ -40,15 +40,11 @@
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Portfolio</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="../media/mandysresume.pdf" target="_blank">Resume</a>
+            <a class="nav-link" href="media/mandysresume.pdf" target="_blank">Resume</a>
           </li>
 
           <li class="nav-item">
@@ -81,21 +77,22 @@
           </p>
         </div>
       </div>
+      <hr>
 
       <div id="portfolio">
-        <h2 class="sectionTitle">Portfolio</h2>
+        <!-- <h2 class="sectionTitle">Portfolio</h2> -->
         <!-- Academic projects -->
         <!-- Project 1: Cup o' Curios-->
         <div id="CoC" class="project">
-          <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#CoCModal">Cup o' Curios</h3>
+          <h2 class="projectTitle" data-bs-toggle="modal" data-bs-target="#CoCModal">Cup o' Curios</h2>
           <a href="#" class="projectThumbnail" data-bs-toggle="modal" data-bs-target="#CoCModal"><img
               src="media/portfolio/cupocurios/thumbnail.png" alt="Cup o' Curios thumbnail" class="img-thumbnail"></a>
           <p class="projectDescription">
+            <b>Nov - Dec 2020</b>
+            <br><br>
             Cup o' Curios is a game prototype about finding the right combinations of ingredients to make the right
             potions for customers. It takes after various cooking games like Diner Dash, and mainly inspired by the Cook
             Serve Delicious series.
-            <br><br>
-            Nov - Dec 2020
           </p>
         </div>
 
@@ -253,14 +250,14 @@
 
         <!-- Project 2: WoodWhisked -->
         <div id="ww" class="project">
-          <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#wwModal">WoodWhisked</h3>
+          <h2 class="projectTitle" data-bs-toggle="modal" data-bs-target="#wwModal">WoodWhisked</h2>
           <a href="#" class="projectThumbnail" data-bs-toggle="modal" data-bs-target="#wwModal"><img
               src="media/portfolio/woodwhisked/thumbnail.png" alt="WoodWhisked thumbnail" class="img-thumbnail"></a>
           <p class="projectDescription">
+            <b>October 2020</b>
+            <br><br>
             WoodWhisked is a game prototype about a theurgist hunter finding their way out of a magical forest after
             getting transported deep into it. It's main inspration is from Rust Bucket.
-            <br><br>
-            October 2020
           </p>
         </div>
 
@@ -447,16 +444,14 @@
 
         <!-- Project 3: Audio Visualizer / Just Visuals and Audio -->
         <div id="jvaa" class="project">
-          <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#jvaaModal">Audio Visualizer / Just Visuals
-            and
-            Audio</h3>
+          <h2 class="projectTitle" data-bs-toggle="modal" data-bs-target="#jvaaModal">Audio Visualizer / Just Visuals and Audio</h2>
           <a href="#" class="projectThumbnail" data-bs-toggle="modal" data-bs-target="#jvaaModal"><img
               src="media/portfolio/audiovisualizer/thumbnail.png" alt="Audio Visualizer thumbnail" class="img-thumbnail"></a>
           <p class="projectDescription">
+            <b>Feb - Mar 2020</b>
+            <br><br>
             We were tasked to make an audio visualizer for this project, where users can control some of the visual and
             audio effects. Then we decided to gamify it, and make it play similar to the game Just Shapes and Beats.
-            <br><br>
-            Feb - Mar 2020
           </p>
         </div>
 
@@ -635,15 +630,15 @@
 
         <!-- Project 4: Interactive Phyllotaxis -->
         <div id="inPhy" class="project">
-          <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#inPhyModal">Interactive Phyllotaxis</h3>
+          <h2 class="projectTitle" data-bs-toggle="modal" data-bs-target="#inPhyModal">Interactive Phyllotaxis</h2>
           <a href="#" class="projectThumbnail" data-bs-toggle="modal" data-bs-target="#inPhyModal"><img
               src="media/portfolio/phyllotaxis/thumbnail.png" alt="interactive phyllotaxis thumbnail" class="img-thumbnail"></a>
           <p class="projectDescription">
+            <b>February 2020</b>
+            <br><br>
             In this project we had to use the phyllotaxis mathematical formula to create an artistic interactive
             experience. Users can click to create sprials on the canvas, and have a multitude of controls to change how
             the sprials grow on the fly.
-            <br><br>
-            February 2020
           </p>
         </div>
 
@@ -779,15 +774,15 @@
 
         <!-- Project 5: Nature Bound -->
         <div id="nb" class="project">
-          <h3 class="projectTitle" data-bs-toggle="modal" data-bs-target="#nbModal">Nature Bound</h3>
+          <h2 class="projectTitle" data-bs-toggle="modal" data-bs-target="#nbModal">Nature Bound</h2>
           <a href="#" class="projectThumbnail" data-bs-toggle="modal" data-bs-target="#nbModal"><img
               src="media/portfolio/naturebound/thumbnail.png" alt="nature bound thumbnail" class="img-thumbnail"></a>
           <p class="projectDescription">
+            <b>Oct - Dec 2019</b>
+            <br><br>
             This is a short interactive experience where players play as a fox running around. The purpose of this
             project was for us to make our own environments and interactions, then optimise assets and settings for
             better performance.
-            <br><br>
-            Oct - Dec 2019
           </p>
         </div>
 
@@ -1018,7 +1013,6 @@
       </div>
 
       <div id="notes">
-        <p>This page is made with help of Bootstrap and Font Awesome</p>
         <p>&copy;
           <script>document.write(new Date().getFullYear());</script> Mandy Wong
         </p>

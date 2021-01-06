@@ -4,8 +4,6 @@
     gap: 1em;
     grid-template-areas: 
         "thumbnail  name"
-        "thumbnail  description"
-        "thumbnail  description"
         "thumbnail  description";
 
     margin: 1em auto 2em auto;

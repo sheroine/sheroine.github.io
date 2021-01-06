@@ -1,13 +1,11 @@
-#content
+#about
 {
     display: grid;
     gap: 1em;
     grid-template-areas: 
         "avatar  name"
-        "avatar  bio"
-        "avatar  bio"
         "avatar  bio";
-
+    grid-template-columns: 256px 1fr;
     margin: 2em auto;
 }
 
@@ -30,7 +28,7 @@
 
 @media only screen and (max-width: 768px)
 {
-    #content
+    #about
     {
         display: grid;
         gap: 1em;
@@ -38,10 +36,59 @@
             "name"
             "avatar"
             "bio";
+        grid-template-columns: auto;
     }
 
     #avatar
     {
         margin: auto;
     }
+}
+
+/*--- portfolio ---*/
+.project
+{
+    display: grid;
+    gap: 1em;
+    grid-template-areas: 
+        "thumbnail  name"
+        "thumbnail  description";
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr 3fr;
+    margin: 1em auto 2em auto;
+}
+
+.projectTitle
+{
+    grid-area: name;
+    margin: auto;
+    text-align: center;
+    text-decoration: underline;
+}
+.projectThumbnail { grid-area: thumbnail; }
+.projectDescription { grid-area: description; }
+
+@media only screen and (max-width: 768px)
+{
+    .project
+    {
+        display: grid;
+        gap: 1em;
+        grid-template-areas:
+            "name"
+            "thumbnail"
+            "description";
+        grid-template-rows: 4rem auto;
+        grid-template-columns: auto;
+    }
+
+    .projectThumbnail
+    {
+        margin: auto;
+    }
+}
+
+.carousel
+{
+    margin-bottom: 1em;
 }

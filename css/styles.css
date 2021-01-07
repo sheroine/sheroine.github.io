@@ -1,13 +1,11 @@
-#content
+#about
 {
     display: grid;
     gap: 1em;
     grid-template-areas: 
         "avatar  name"
-        "avatar  bio"
-        "avatar  bio"
         "avatar  bio";
-
+    grid-template-columns: 256px 1fr;
     margin: 2em auto;
 }
 
@@ -30,7 +28,7 @@
 
 @media only screen and (max-width: 768px)
 {
-    #content
+    #about
     {
         display: grid;
         gap: 1em;
@@ -38,10 +36,82 @@
             "name"
             "avatar"
             "bio";
+        grid-template-columns: auto;
     }
 
     #avatar
     {
         margin: auto;
     }
+}
+
+/*--- portfolio ---*/
+.project
+{
+    display: grid;
+    column-gap: 1em;
+    grid-template-areas: 
+        "thumbnail  name"
+        "thumbnail  description";
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr 4fr;
+    margin-bottom: 2em;
+
+    border: 1px solid #8C368F;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #ffffff55;
+}
+
+.projectTitle
+{
+    grid-area: name;
+    font-weight: bold;
+    margin: auto 0;
+}
+.projectThumbnail { grid-area: thumbnail; }
+.projectDescription
+{
+    grid-area: description;
+    margin-right: 1em;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .project
+    {
+        display: grid;
+        gap: .5em;
+        grid-template-areas:
+            "name"
+            "thumbnail"
+            "description";
+        grid-template-rows: 4rem auto;
+        grid-template-columns: auto;
+    }
+
+    .projectThumbnail
+    {
+        margin: auto;
+    }
+
+    .projectTitle
+    {
+        text-align: center;
+    }
+
+    .projectDescription
+    {
+        margin-right: 0;
+    }
+}
+
+.carousel
+{
+    margin-bottom: 1em;
+}
+
+#portfolio
+{
+    margin-top: 4rem;
 }

@@ -33,7 +33,7 @@ footer, .modal-footer
     color: #000000;
 }
 
-h1, h3, h4
+h1, h2, h3, h4
 {
     color: #A451A7;
 }
@@ -48,12 +48,12 @@ h1, h3, h4
     background-color: #A451A7;
 }
 
-.projectTitle:hover, .projectThumbnail:hover
+.projectThumbnail:hover
 {
     cursor: pointer;
 }
 
-.projectTitle:hover, a:hover, a:focus
+a:hover, a:focus
 {
     color: #C478C7;
 }

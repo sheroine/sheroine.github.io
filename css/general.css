@@ -26,7 +26,7 @@ footer
 {
     body
     {
-        padding-bottom: 13rem;
+        padding-bottom: 10rem;
     }
 }
 
@@ -41,3 +41,8 @@ footer i
 {
     height: 40px;
 }
+
+/* .sectionTitle
+{
+    text-align: center;
+} */

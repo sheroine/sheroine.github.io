@@ -18,7 +18,7 @@
   <link href="css/general.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 
-  <title>Mandy Wong</title>
+  <title>Mandy's Portfolio</title>
 </head>
 
 <body>
@@ -44,10 +44,6 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="portfolio/index.html">Portfolio</a>
-          </li>
-
-          <li class="nav-item">
             <a class="nav-link" href="media/mandysresume.pdf" target="_blank">Resume</a>
           </li>
 
@@ -61,46 +57,962 @@
 
   <main>
     <div id="content" class="container-lg">
-      <!-- bio -->
-      <div id="name">
-        <h1>Mandy Wong</h1>
-        <p>An artist and game designer</p>
+      <!-- about me -->
+      <div id="about">
+        <div id="name">
+          <h1>Mandy Wong</h1>
+          <p>An artist and game designer</p>
+        </div>
+
+        <img src="media/avatar.png" class="img-fluid" alt="my avatar" id="avatar">
+
+        <div id="bio">
+          <p>
+            I am a current Game Design and Development student at Rochester Institute of Technology. I am passionate
+            about making games and art as I like creating works and immersive experiences that people can enjoy. During my
+            time at RIT, I have worked on multiple game prototypes with different people in small groups. When I'm not making
+            more art in my free time, I enjoy crocheting, listening to music, and of course playing more games.
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <div id="portfolio">
+        <!-- <h2 class="sectionTitle">Portfolio</h2> -->
+        <!-- Academic projects -->
+        <!-- Project 1: Cup o' Curios-->
+        <div id="CoC" class="project">
+          <h2 class="projectTitle">Cup o' Curios</h2>
+          <a href="#" class="projectThumbnail" data-bs-toggle="modal" data-bs-target="#CoCModal"><img
+              src="media/portfolio/cupocurios/thumbnail.png" alt="Cup o' Curios thumbnail" class="img-thumbnail"></a>
+          <p class="projectDescription">
+            <b>Nov - Dec 2020</b>
+            <br><br>
+            Cup o' Curios is a game prototype about finding the right combinations of ingredients to make the right
+            potions for customers. It takes after various cooking games like Diner Dash, and mainly inspired by the Cook
+            Serve Delicious series.
+            <br>
+            Players would have to guess the right ingredient combinations to make potions requested by their customers based on the attributes and nature of provided ingredients and requested potions, then try and earn as money as they can before the end of the day.
+            <br>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#CoCModal">Read more</a>
+          </p>
+        </div>
+
+        <!-- CoC Modal -->
+        <div class="modal fade" id="CoCModal" tabindex="-1" aria-labelledby="CoCModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="CoCModalLabel">Cup o' Curios</h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <!-- carousel -->
+                <div id="CoCcarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="4"></li>
+                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="5"></li>
+                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="6"></li>
+                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="7"></li>
+                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="8"></li>
+                    <li data-bs-target="#CoCcarousel" data-bs-slide-to="9"></li>
+                  </ol>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="media/portfolio/cupocurios/gamemenu.png" class="d-block w-100" alt="game menu">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/cupocurios/menudesign.png" class="d-block w-100" alt="game menu design">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/cupocurios/game.png" class="d-block w-100" alt="game interface">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/cupocurios/ingredients.png" class="d-block w-100" alt="ingredients close up">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/cupocurios/mixingbowl.png" class="d-block w-100"
+                        alt="mixing bowl with ingredients">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/cupocurios/mixture.png" class="d-block w-100" alt="stirred cyan mixture">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/cupocurios/potion.png" class="d-block w-100" alt="cyan potion">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/cupocurios/customers.png" class="d-block w-100" alt="customer and orders">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/cupocurios/boxart.png" class="d-block w-100" alt="PS4 box art">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/cupocurios/credits.png" class="d-block w-100" alt="credits">
+                    </div>
+                  </div>
+
+                  <a class="carousel-control-prev" href="#CoCcarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#CoCcarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+
+                <h4>More about the game</h4>
+                <p>
+                  This game prototype was done in a little more than a month. It's setting and mechanics are based on
+                  the Dresden Files univserse, specifically how potions are made in that universe as our game is about
+                  making potions.
+                  <br><br>
+                  Players would have to guess the right ingredient combinations to make potions requested by their
+                  customers based on the attributes and nature of provided ingredients and requested potions.
+                  <br>
+                  It will be confusing to start when the player is still trying to find the potion recipies. But once
+                  the player gets them, it's all about speed and memory, to serve as many customers as possible to earn lots
+                  of money by the end of the day. Then try to break their own highest records of cash earned.
+                  <br><br>
+                  Each ingredient is mapped to a key on the keyboard as indicated above the ingredient, so players will press the corresponding key to add that ingredient into the mixing bowl. The ingredients are also categorised into 8 types as indicated by the color of their name tag. It is because in the Dresden Files universe, potions are made with 8 ingredients: a liquid base, an ingredent for each of the 5 senses, one for the mind, and one for the spirit. Therefore, players can only add one of each type of ingredent into the bowl.
+                  <br>
+                  The potion needs to be mixed after 8 ingredients are added into the bowl, and it is done by holding down spacebar. It would simply not work if not enough ingredients are added. Once the mixture is stirred, players can tell what kind of potion they made by the color the mixture is. If that was not the potion the current customer needs or if the player added a wrong ingredient, they could press spacebar to start over. If the player did make the right potion, they will press enter to transfer the liquid into the flask on the right to shove magic into it. The white line on the bar under the flask will move across the bar, and players would preferrably want to stop it in the green zone by pressing enter again. If it lands in the green zone, it makes a great potion and customers will pay more; if it lands in the yellow, the potion is subpar and customers will pay a little less; if it goes over to the red, the player is using magic recklessly and customers will pay even less. If players served the wrong potion to the customer, they will lose some money, however if the customer left after waiting for too long, players won't loose anything.
+                </p>
+
+                <h4>My work</h4>
+                <p>
+                  This project is a group academic project of 4 people: Patrick Mitchell, <a
+                    href="https://crlimacastro.github.io/" target="_blank"> Camilo Lima</a>, <a
+                    href="http://rhysstever.me/" target="_blank">Rhys Stever</a>, and me. I was responsible for making
+                  all of the art and assets for this project, then implementing them as spritesheets in Unity.
+                  <br>
+                  We were required to submit box art for our prototype even if it's PC only. So we were allowed to
+                  choose a different platform that does distrubute games with physical boxes and design one for that, thus a
+                  PS4 box art for our PC game.
+                  <br><br>
+                  There are 24 ingredient types on the table, and they each have their own "piece image" asset that
+                  appears in the mixing bowl. The stirred mixture is a white and grey image placed in between the front
+                  and back of the bowl assets, then tinted in game to reflect the type of potion made by the player. The
+                  table is made with help of texture stamps to reflect their material types.
+                  <br>
+                  The customers all have the same figure, in the same cloak with different colors, then mix and matched
+                  4 types of skin color, hair styles, and eyes. This was done because I was running out of time to make
+                  more varied assets by the end of the project, so we had to settle with similar looking customers instead of
+                  a diverse cast. The cloak also unfortunately wasn't the best clothing style for this game's people,
+                  since the Dresden Files universe is set in the modern US.
+                  <br><br>
+                  The menu art was based on the idea that this potion shop the player runs is located underground. So I
+                  imagined that the shop is in some secret underground facility with a bunch of corridors, where other
+                  magic users could rent out the rooms provided there and do whatever they please. And the menu art is
+                  the door to the shop, with it's name and some art spray painted onto the wall and door directly.
+                  <br>
+                  It was really hard to find reference images that had indoor storefronts that don't have any windows,
+                  since we decided that the shop wouldn't have windows for being underground. Or just underground
+                  facilities that had the right feel or elements I wanted to find in general. I found exactly 1 image of
+                  a door to a bar down a corridor with minimal wall art that expressed some liveliness and gave me the
+                  right vibe for an underground society that isn't abandoned.
+                  <br><br>
+                  A rainbow potion being poured into a bottle while magic is shoved into it, depicted by the cyan and
+                  purple particles and aura, is the design of the box art. The idea of "rainbow potion being poured into
+                  a bottle" was suggested by Patrick since it is a simplier design, and we were running out of time to finish the project when I got to designing it. I took his suggestion and thought of the last step of making the potion: shoving magic into it. This highlights the magical aspect of the game and make an eye-catching design, and was how the design came to be.
+                  <br><br>
+                  All the art is done using Krita.
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: WoodWhisked -->
+        <div id="ww" class="project">
+          <h2 class="projectTitle">WoodWhisked</h2>
+          <a href="#" class="projectThumbnail" data-bs-toggle="modal" data-bs-target="#wwModal"><img
+              src="media/portfolio/woodwhisked/thumbnail.png" alt="WoodWhisked thumbnail" class="img-thumbnail"></a>
+          <p class="projectDescription">
+            <b>October 2020</b>
+            <br><br>
+            WoodWhisked is a game prototype about a theurgist hunter finding their way out of a magical forest after
+            getting transported deep into it. It's main inspration is from Rust Bucket.
+            <br>
+            Players would have to safely navigate the forest, utilising remaining arrows and their theurgy abilities, to find the end rune in hopes of escaping the forest and return home.
+            <br>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#wwModal">Read more</a>
+          </p>
+        </div>
+
+        <!-- WW Modal -->
+        <div class="modal fade" id="wwModal" tabindex="-1" aria-labelledby="wwModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="wwModalLabel">WoodWhisked</h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <!-- carousel -->
+                <div id="wwcarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#wwcarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#wwcarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#wwcarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#wwcarousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#wwcarousel" data-bs-slide-to="4"></li>
+                    <li data-bs-target="#wwcarousel" data-bs-slide-to="5"></li>
+                    <li data-bs-target="#wwcarousel" data-bs-slide-to="6"></li>
+                    <li data-bs-target="#wwcarousel" data-bs-slide-to="7"></li>
+                    <li data-bs-target="#wwcarousel" data-bs-slide-to="8"></li>
+                  </ol>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="media/portfolio/woodwhisked/gamemenu.png" class="d-block w-100" alt="game menu">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/woodwhisked/menuart.png" class="d-block w-100" alt="game menu design">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/woodwhisked/endrune.png" class="d-block w-100" alt="end tile rune">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/woodwhisked/boarNpowerups.png" class="d-block w-100"
+                        alt="boar enemies and power up icons in top left corner">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/woodwhisked/inactiverune.png" class="d-block w-100"
+                        alt="inactive pressure plate rune">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/woodwhisked/activerune.png" class="d-block w-100"
+                        alt="active pressure plate rune">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/woodwhisked/treesquid.png" class="d-block w-100" alt="tree squid enemy">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/woodwhisked/boxart.png" class="d-block w-100" alt="PS4 box art">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/woodwhisked/credits.png" class="d-block w-100" alt="credits">
+                    </div>
+                  </div>
+
+                  <a class="carousel-control-prev" href="#wwcarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#wwcarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+
+                <h4>More about the game</h4>
+                <p>
+                  This game prototype was done in a month. It's setting and mechanics are based on the Ethshar universe,
+                  specifically theurgy as the form of magic that the player character uses. Some enemies are also cannonical creatures in the Ethshar universe, such as the treesquid.
+                  <br><br>
+                  WoodWhisked is a tile based, casual adventure puzzle game. Players would have to navigate to the end
+                  tile, which is a cyan colored rune, to complete the level and proceed to the next. Along the way there
+                  would be enemies, like the boar and the treesquid, that would hurt the player on contact and restart
+                  the
+                  level. Players would have to utilise their remaining arrows from their hunting trip, and their theurgy
+                  abilities to safely navigate the forest and reach their end goal.
+                  <br><br>
+                  Our game is also turn based, where enemies will not make their turn until the player does, therefore
+                  the
+                  player can take their time to think of their next moves, and observe enemy behaviour and movement
+                  patterns. Boars will move 1 tile every 2 turns and try to ram into the player, while the tree squid is
+                  stationary. Originally it was planned that the treesquid would hide in their tree until the player
+                  gets
+                  close enough, then attack the player when they are in the tiles adjacent to the tree. However we ran
+                  out
+                  of time to implement that.
+                  <br><br>
+                  Currently we have implemented 4 levels, 2 enemy types, shooting arrows, and 1 theurgy ability. There
+                  were more enemies and theurgy abilities planned during development, but we weren't able to implement
+                  all
+                  of them due to the time constrain. Entities are also unfortunately unanimated.
+                </p>
+
+                <h4>My work</h4>
+                <p>
+                  This project is a group academic project of 4 people: Patrick Mitchell, <a
+                    href="https://crlimacastro.github.io/" target="_blank"> Camilo Lima</a>, <a
+                    href="http://rhysstever.me/" target="_blank">Rhys Stever</a>, and me. I was responsible for making
+                  all of the art and assets for
+                  this project, then implementing them as spritesheets in Unity.
+                  <br>
+                  We were required to submit box art for our prototype even if it's PC only. So we were allowed to
+                  choose
+                  a different platform that does distrubute games with physical boxes and design one for that, thus a
+                  PS4
+                  box art for our PC game.
+                  <br><br>
+                  All the tiles in the game are 64px squares. Grass and path tiles all connect with each other
+                  seamlessly.
+                  The flora consists of 2 types of trees, tree stumps, fallen logs, and bushes. Due to the time
+                  constrain,
+                  and this being a prototype, these tile assets are rather simple and has no shading done on them so I
+                  could save time and get them done as quickly as possible.
+                  <br>
+                  The entities have more detail though, especially the player character, where their design has to
+                  reflect
+                  that they are a theurgist hunter. The white handprint on their hood and quiver, alongside the gold
+                  trim
+                  of their robe are what theurgists wear in the Ethshar universe. Though as a hunter, they would have to
+                  blend into the environment as well, thus their robe being green instead of white. The player
+                  character's
+                  design was a fun mix and match of 2 roles and their respective attire and symbols.
+                  <br><br>
+                  Rune tiles were designed with reference to magic circles and rune symbols. The end tile had a bunch of
+                  symbols drawn in it that mostly relate to "teleportation", "nature", "wind", and "home". That's
+                  because
+                  the player character wishes to find their way out of the forest and back home, and a change of
+                  location
+                  (to next level) suggests teleportation of some sort. The green "pressure plate" rune was mostly
+                  designed
+                  on the idea of an eye, where it's like something is awakened and it opens its eyes. But since it's a
+                  rune, they are drawings or inscriptions, so the eye doesn't open or close, but the glowing parts
+                  reflect
+                  its current state instead.
+                  <br><br>
+                  Ability icons on the top left have 2 different outline colors because of their different nature. Using
+                  your bow and arrow is a normal physical skill, so it has a plain black outline. While the leap
+                  ability,
+                  along with 2 other unimplemented abilities, have a light yellow outline that has a bit of an inner
+                  glow
+                  to show that they are theurgy abilities and relating to magic.
+                  <br>
+                  The buttons were also designed by me, and they are a 9-sliced sprite. They are designed to look fancy,
+                  are green and gold to reflect the player character's robe colors, and look like vines of a sort due to
+                  the game's setting in a magical forest.
+                  <br><br>
+                  The menu art is of the forest the player character is situated in: a dense and mysterious forest. The
+                  box art features the player, a hidden treesquid, and an unimplemented enemy called a mizagar, where
+                  only
+                  its red menacing eyes are seen. Mizagars are another cannonical creature in the Ethshar universe, and
+                  would have been a great and challenging enemy to face, but as mentioned above, we didn't have the time
+                  to implement it, so I added it to the box design as an homage.
+                  <br>
+                  A mizagar is said to be really hard to detect, and nearly invisible at night, therefore only their
+                  eyes
+                  were drawn in the design. Humans are also their preferred food, thus I made the eyes menacing, to show
+                  that they are a threat to the player character. While the mizagar isn't in our prototype, having it in
+                  the box art as a lurking danger better reflects the tone and mood of our game, and letting potential
+                  consumers know what they're getting into whie looking at the game box to decide whether or not to buy
+                  it.
+                  <br>
+                  One small unfortunate note about the box art though, I was rushing to complete it and in the heat of
+                  it
+                  forgot to add the game name to the spine.
+                  <br><br>
+                  All the art is done using Krita.
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Audio Visualizer / Just Visuals and Audio -->
+        <div id="jvaa" class="project">
+          <h2 class="projectTitle">Audio Visualizer / Just Visuals and Audio</h2>
+          <a href="#" class="projectThumbnail" data-bs-toggle="modal" data-bs-target="#jvaaModal"><img
+              src="media/portfolio/audiovisualizer/thumbnail.png" alt="Audio Visualizer thumbnail" class="img-thumbnail"></a>
+          <p class="projectDescription">
+            <b>Feb - Mar 2020</b>
+            <br><br>
+            We were tasked to make an audio visualizer for this project, where users can control some of the visual and
+            audio effects. Then we decided to gamify it, and make it play similar to the game Just Shapes and Beats.
+            <br>
+            Currently there are 3 tracks for selection, and each track has differnet visual elements. Visual elements include poppers, blips, moving Bezier curves, and audio data.
+            <br>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#jvaaModal">Read more</a>
+          </p>
+        </div>
+
+        <!-- JVAA Modal -->
+        <div class="modal fade" id="jvaaModal" tabindex="-1" aria-labelledby="jvaaModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="jvaaModalLabel">Audio Visualizer / Just Visuals and Audio</h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <!-- carousel -->
+                <div id="jvaacarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"> 
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="4"></li>
+                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="5"></li>
+                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="6"></li>
+                    <li data-bs-target="#jvaacarousel" data-bs-slide-to="7"></li>
+                  </ol>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="media/portfolio/audiovisualizer/initialpage.png" class="d-block w-100"
+                        alt="initial appearance of page">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/audiovisualizer/controlsopen.png" class="d-block w-100"
+                        alt="opened controls panel and playing music">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/audiovisualizer/gradientgreenwave.png" class="d-block w-100"
+                        alt="showing waveform in green gradient">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/audiovisualizer/invertrainbow.png" class="d-block w-100"
+                        alt="showing rainbow with inverted colors">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/audiovisualizer/audiotweak.png" class="d-block w-100"
+                        alt="showing waveform with audio effects tweaked">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/audiovisualizer/gamify.png" class="d-block w-100" alt="gamified">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/audiovisualizer/playerstats.png" class="d-block w-100"
+                        alt="player select and stats">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/audiovisualizer/controls.png" class="d-block w-100" alt="controls panel">
+                    </div>
+                  </div>
+
+                  <a class="carousel-control-prev" href="#jvaacarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#jvaacarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+
+                <h4>More about the project</h4>
+                <p>
+                  Currently there are 3 tracks for selection, and each track has differnet visual elements. Visual
+                  elements include poppers, blips, moving Bezier curves, and audio data.
+                  <br>
+                  Bars are used to present audio data, and users can pick between viewing the music's frequencies or
+                  waveform. It is shown on all 3 tracks, is behind and slightly dimmer than other visual elements.
+                  <br>
+                  Poppers will constantly bounce around the screen, their size changes with a randomly selected
+                  frequency
+                  data node, and if cooldown is up they will pop and spawn blips if the frequency is high enough or if
+                  the
+                  previous value has large enough of a different than the current one.
+                  <br>
+                  Blips are just small circles or squares that move across the screen in a single direction and speed
+                  until they move off screen, then they disappear.
+                  <br>
+                  Moving Bezier curves can be either a regular Bezier curve or a quadradic Bezier curve. Their start and
+                  end points are stationary, but their control points will move and bounce around the screen, their
+                  speed
+                  varying with the waveform audio data, producing Bezier curves that change shape with the music.
+                  <br>
+                  The first track consists of 2 poppers, a square and a circle one; The second track consists of 1
+                  circle
+                  popper, and blips spawning from the right size of the canvas if the audio data has a high average; the
+                  third track consists of 5 quadradic Bezier curves in the center and 2 regular Bezier curves on the
+                  sides, along with a surprise.
+                  <br><br>
+                  Controls are provided to the user, it can be opened and collasped in the top right corner, and they
+                  can
+                  pick which music track they want to listen to, adjust the volume, visual effects, and audio effects,
+                  and
+                  pick which audio data to view.
+                  <br>
+                  Visual effects include changing the color scheme, have the color scheme be a gradient or not, toggle
+                  noise, invert colors, and show an emboss effect. Audio effects including adjusting the bass or treble
+                  effect, and toggle distortion. Unfortunately, the distortion toggle does not work because we ran out
+                  of
+                  time to figure it out.
+                  <br><br>
+                  One last control is the gamify toggle, which will turn the Audio Visualizer into Just Visuals and
+                  Audio,
+                  mimicking the music bullet hell game Just Shapes and Beats. However, this portion is notoriously
+                  unfinished, and frankly isn't a game yet. The toggle changes the heading of the page, adds a player
+                  select and stats below the play / pause button, adds a player shape to the canvas that follows the
+                  cursor, and freezes everything on the canvas when the music is paused, but that's all we managed to
+                  complete before the submission deadline.
+                  <br>
+                  This was totally the case of us biting off way more than we could chew, but also it was around the
+                  time
+                  when Covid-19 lockdowns started getting issued, and we all had to quickly switch to working completely
+                  remotely. So with all that extra stress happening, we couldn't get around to implement collision
+                  detection, which is the one and main thing that makes it a game.
+                  <br>
+                  We were planning to have keyboard controls and have a dash just like Just Shapes and Beats, but we
+                  couldn't figure out keyboard inputs at the time, so we quickly switched to having the cursor be the
+                  player since we were running out of time. We added the player stats so that players could see how many
+                  hits they took and how many dashes they did, and a ranking system based on the number of hits players
+                  took. But as mentioned above, collision detection wasn't even implemented, so none of these stats
+                  could
+                  be properly shown.
+                </p>
+
+                <h4>My work</h4>
+                <p>
+                  We worked in pairs for this academic project, and both of us had to work on all parts of this project
+                  equally. My
+                  friend <a href="https://people.rit.edu/jsh7099/portfolio/" target="_blank">Joseph</a> and I
+                  contributed
+                  to the coding, working on different classes and files at the same time. Though
+                  the idea of making a game out of an audio visualizer and picking Just Shapes and Beats as the game to
+                  mimick was my idea, since I thoroughly enjoyed that game, and got really excited at the thought that
+                  we
+                  could make something like that. (And thus got way too ambitious.)
+                  <br>
+                  I was more experienced with the mechanics of Just Shapes and Beats, so I guided Joseph on what kind
+                  of visual elements we could add to this project, namely the poppers and blips. The Bezier curves were
+                  a
+                  fun addition suggested by Joseph while we were wondering what simplier shape or element we could
+                  easily add and clearly represent the audio data. Then I suggested we move the curves' control points
+                  around the screen since I did that in a different assignment and had a lot of fun with it.
+                  <br>
+                  There is a lot of code in this project, some given by our professor, a bunch taken and refactored from
+                  our past projects, and a lot we figured out along the way. There's no clear differentiation on which
+                  parts of the code each of us did, since we did paired programming and helped each other out a lot of
+                  the
+                  times as well. I believe the only thing that was done separately was me rushing to write the css to
+                  make
+                  the page resemble Just Shapes and Beats, while Joseph rushed to write the documentation for our
+                  project before submission.
+                  <br><br>
+                  This project was done entirely with Javascript, HTML, and CSS, and with help of the Canvas API, Web
+                  Audio API, and dat.GUI API.
+                  <br><br>
+                  You can check out our project <a href="https://people.rit.edu/mxw4175/330/project2/"
+                    target="_blank">here</a>!
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Interactive Phyllotaxis -->
+        <div id="inPhy" class="project">
+          <h2 class="projectTitle">Interactive Phyllotaxis</h2>
+          <a href="#" class="projectThumbnail" data-bs-toggle="modal" data-bs-target="#inPhyModal"><img
+              src="media/portfolio/phyllotaxis/thumbnail.png" alt="interactive phyllotaxis thumbnail" class="img-thumbnail"></a>
+          <p class="projectDescription">
+            <b>February 2020</b>
+            <br><br>
+            In this project we had to use the phyllotaxis mathematical formula to create an artistic interactive
+            experience. Users can click to create sprials on the canvas, and have a multitude of controls to change how
+            the sprials grow on the fly.
+            <br>
+            Users can generate flowers will different sizes, colors, petal shapes, lines, and sprial patterns. Each flower could keep a single unchanged design, or mix and match the above listed parameters.
+            <br>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#inPhyModal">Read more</a>
+          </p>
+        </div>
+
+        <!-- phyll Modal -->
+        <div class="modal fade" id="inPhyModal" tabindex="-1" aria-labelledby="inPhyModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="inPhyModalLabel">Interactive Phyllotaxis</h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <!-- carousel -->
+                <div id="inPhycarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#inPhycarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#inPhycarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#inPhycarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#inPhycarousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#inPhycarousel" data-bs-slide-to="4"></li>
+                  </ol>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="media/portfolio/phyllotaxis/initialpage.png" class="d-block w-100"
+                        alt="initial appearance of page">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/phyllotaxis/smallflowers.png" class="d-block w-100"
+                        alt="small flowers of different colors">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/phyllotaxis/diffflowers.png" class="d-block w-100"
+                        alt="larger flowers with different sprials and lines">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/phyllotaxis/changingsprials.png" class="d-block w-100"
+                        alt="flowers with changing sprials and lines">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/phyllotaxis/controls.png" class="d-block w-100" alt="controls">
+                    </div>
+                  </div>
+
+                  <a class="carousel-control-prev" href="#inPhycarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#inPhycarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+
+                <h4>More about the project</h4>
+                <p>
+                  Phyllotaxis is related to botany and refers to the arrangement of leaves on a plant stem, it is also
+                  seen in plants that grow in sprial patterns. This project uses one of the mathematical formula
+                  proposed
+                  by Vogel to obtain the polar coordinates of successive florets, where the divergence angle would
+                  determine what pattern would result.
+                  <br><br>
+                  Users will click on the canvas and a sprial will start growing from that point, and there can be
+                  multiple flowers / sprials growing at once. Controls include flower size, petal padding, petal size,
+                  divergence angle, petal shape and color, and toggle lines drawn between petals and their color. Users
+                  can also pause and play the growth of flowers, change the background color of the canvas, save their
+                  creations to their computer, and reset the canvas.
+                  <br>
+                  Flower size affects the number of dots drawn in a spawned sprial; petal padding affects the space
+                  between each petal; petal size is just the size of each dot. The divergence angle as mentioned above
+                  is
+                  what changes the type of sprial the dots will be drawn in. Changing the value of it by even 0.5 will
+                  result in a completely different sprial pattern. By default petals are circles, but if users uncheck
+                  that option they will get square petals, however they won't rotate based on their position. Lines are
+                  unchecked by default, they are drawn from the previous dot to the next dot if checked. Both petals and
+                  lines have a separate color picker for changing their color.
+                  <br>
+                  Some of these controls will affect flowers that are currently still growing on the canvas, so users
+                  can
+                  make a single flower have petals with multiple colors, shapes, lines and even change the type of
+                  sprial
+                  with the divergence angle halfway through. This is where the play pause buttons come in handy, where
+                  users can pause the canvas and have all the time they needed to change the flower parameters, then
+                  play
+                  it again and see all the new changes at once. Flowers can still be initiated by clicking when the
+                  canvas
+                  is paused, however I did not think of having an indication for that during development. It was
+                  suggested
+                  to me after it was submitted that I could have drawn the first dot for the sprial when the canvas is
+                  paused. So currently it would look like nothing happened when the canvas is clicked when it's paused,
+                  then all the flowers will bloom together once the play button is pressed, and I understand this would
+                  definitely confuse users at first.
+                  <br>
+                  Users can change the background image of the canvas, however it does not appear in the saved image if
+                  users decided to download the image. It's because I changed the css styling of the canvas instead of
+                  drawing the background onto the canvas directly, so the downloaded image will always have a
+                  transparent
+                  background regardless of what the user selected.
+                </p>
+
+                <h4>My work</h4>
+                <p>
+                  This is an individual academic project. There was some code that was given to us from the professor,
+                  then I wrote the rest of the code by myself. The css styling for the custom radio buttons, checkboxes,
+                  and slider were code copied from w3schools, and I made the color palette of the page with help of
+                  paletton.com. I had tried to not take w3school's code directly, however any modification to it besides
+                  changing simple color hex codes and certain values would just break the entire thing. Therefore, I
+                  only
+                  changed the color of elements and left the code as is, then linked the source as comments in the css
+                  file.
+                  <br><br>
+                  This project was done entirely with Javascript, HTML, and CSS, and with help of the Canvas API.
+                  <br><br>
+                  You can check out my project <a href="https://people.rit.edu/mxw4175/330/project1/"
+                    target="_blank">here</a>!
+                  <br><br>
+                  Bonus: I discovered if you check lines, make them a different color than the dots, then keep clicking
+                  the same
+                  exact spot in short intervals, it creates a really cool visual effect as you watch multiple flowers
+                  grow
+                  together in the same spot.
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Nature Bound -->
+        <div id="nb" class="project">
+          <h2 class="projectTitle">Nature Bound</h2>
+          <a href="#" class="projectThumbnail" data-bs-toggle="modal" data-bs-target="#nbModal"><img
+              src="media/portfolio/naturebound/thumbnail.png" alt="nature bound thumbnail" class="img-thumbnail"></a>
+          <p class="projectDescription">
+            <b>Oct - Dec 2019</b>
+            <br><br>
+            This is a short interactive experience where players play as a fox running around. The purpose of this
+            project was for us to make our own environments and interactions, then optimise assets and settings for
+            better performance.
+            <br>
+            Half of the time spent on the project was making the environment and interactions, then the other half was spent mostly on optimisation of 3D models, textures, materials, etc. as the class this project was done for was about the optimisation aspect of tech art.
+            <br>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#nbModal">Read more</a>
+          </p>
+        </div>
+
+        <!-- NB Modal -->
+        <div class="modal fade" id="nbModal" tabindex="-1" aria-labelledby="nbModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="nbModalLabel">Nature Bound</h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <!-- carousel -->
+                <div id="nbcarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="4"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="5"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="6"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="7"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="8"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="9"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="10"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="11"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="12"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="13"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="14"></li>
+                    <li data-bs-target="#nbcarousel" data-bs-slide-to="15"></li>
+                  </ol>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="media/portfolio/naturebound/mainmenu.png" class="d-block w-100" alt="main menu">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/foxstart.png" class="d-block w-100" alt="fox starting in forest">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/villageentrance.png" class="d-block w-100" alt="village entrance">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/cutscene.png" class="d-block w-100" alt="comic cutscene">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/thingsonfire.png" class="d-block w-100"
+                        alt="lighting things on fire with fire power">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/queststart.png" class="d-block w-100" alt="starting flower quest">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/pickflower.png" class="d-block w-100" alt="picking a flower">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/bridge.png" class="d-block w-100" alt="bridge with splashing water">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/manyflowers.png" class="d-block w-100" alt="flower patch">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/placedflowers.png" class="d-block w-100"
+                        alt="flowers given to villager">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/questcomplete.png" class="d-block w-100" alt="flower quest completed">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/waterfall.png" class="d-block w-100"
+                        alt="waterfall granting water power">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/waterpower.png" class="d-block w-100" alt="water power">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/torchout.png" class="d-block w-100"
+                        alt="put out torch with water power">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/settings.png" class="d-block w-100" alt="settings page">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/naturebound/settingschange.png" class="d-block w-100" alt="changed settings">
+                    </div>
+                  </div>
+
+                  <a class="carousel-control-prev" href="#nbcarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#nbcarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+
+                <h4>More about the project</h4>
+                <p>
+                  Players play as a fox living in a forest with other forest animals like squirrels and rabbits. There
+                  is also a tiny village situated in this forest, and a waterfall that flows into a river on the other
+                  end of the map. The fox has the ability to light itself on fire that players can toggle on and off
+                  with left mouse click. Players can light up some things in the village like torches when on fire.
+                  <br><br>
+                  There is a trigger at the village entrance that will play a "cutscene" which is just a 4 panel comic
+                  that depicts 2 villagers in an argument of some sort, and one of them ends up with their flowers
+                  destroyed. Approaching the villager who lost their flowers will activate a flower quest, where players
+                  can now collect flowers for them to replant. Pickable flowers are indicated with a yellow glowly
+                  particle effect, and when the player fox intersects with the flowers, a tip will show above the flower
+                  telling them to press E to pick flower. The flower will appear in the fox's mouth when picked up, and
+                  players can press Q to drop it, which will just make it disappear. Dropping the flowers by the
+                  villager (trigger box indicated with the same yellow glowing particle effect on pickable flowers) with
+                  Q will place down the flower in the box
+                  <br><br>
+                  Once the player completes the flower quest, the only quest available, players can then earn a water
+                  ability at the base of the waterfall. Players can toggle it on and off just like the fire ability,
+                  however there is a bar at the bottom left of the screen that will continuously deplete when the water
+                  ability is toggled on. Once it runs out, players can no longer use the water ability until they refill
+                  the bar by going into the river again. The fire ability is still available and can be selected by
+                  pressing 1, the water ability is selected by pressing 2. The fox's flames will be doused when players
+                  run into water while on fire. After players lit things on fire with their ability, the water ability
+                  allows them to put out those fires, so players can then keep lighting things on fire then put them out
+                  over and over again.
+                  <br><br>
+                  There is a settings menu that can be access when the game is paused. It allows players to change game
+                  resolution, view distance, shadow quality, field of view, and camera distance. Game resolution, view
+                  distance, and shadow quality could be previewed when changed while FOV and camera distance would need
+                  the game to be unpaused to see changes. Changes to the graphics settings must be applied to keep the
+                  changes in game, otherwise it will go back to the previous settings.
+                  <br><br>
+                  This projects is supposed to be a polished final project, however theres are a bunch of issues that I
+                  could not solve that makes the game appear very buggy. The experience is also really short and limited
+                  because that was only a part of the project, the other thing we had to do was to optimise its
+                  performance and save resources needed to run the game, and some of it is more apparent in the form of
+                  the graphics settings menu.
+                </p>
+
+                <h4>My work</h4>
+                <p>
+                  This is an individual academic project. Interactions are done with blueprints and a lot of trigger
+                  boxes. There are 2 villagers (just as the default mannequin characters) that walk around the
+                  environment by following a spline. For items that could be lit on fire, it just checks if the player
+                  fox is on fire or not when the 2 trigger boxes intersect, then show a fire particle effect to appear
+                  lit. Small animals that run around the environment have their behaviour included in their asset pack,
+                  so I simply added them to the environment with their blueprints. The terrain is sculpted then foliage
+                  is sprinkled around the environment, while flowers are a bit more carefully placed in clusters, then a
+                  tiny village is placed on one end of the terrain and a waterfall with a river is placed on the other.
+                  Blocking volumes are placed on the edges of the map to prevent the player from running off the map.
+                  <br><br>
+                  The player fox is where most of my issues are. The physics of the fox does not suggest that it is a
+                  fox at all because I scripted its movement using forces, so the fox is really slidey and can move and
+                  fly off the terrain super fast. Sometimes it gets stuck on the small hills in the terrain, and affects
+                  it's ability to jump. To note how broken the movement is, it could move so fast and skid off of hills
+                  and fly across the entire map, or could get knocked super high that it goes over the blocking volumes
+                  and fall out of the world, or it moves so fast that it clips through the terrain or other placed
+                  models. Sometimes the small animals in the environment could also knock the fox away super high and/or
+                  far away just from the tiniest touch and I had no idea why. So that's "fun."
+                  <br>
+                  It has run and idle animations in its asset pack that I implemented to play while the fox is moving
+                  and standing still respectively, but unfortunately those were the only animations I could implement.
+                  The jump animation and character rotation with movement direction could not work no matter what I did,
+                  it spasmed and gllitched everywhere even without movement inputs when I was attempting to implement
+                  the rotation, so the fox is stuck facing the same direction forever. I suspected that this is due to
+                  me building the character starting with the player pawn blueprint instead of the player controller
+                  blueprint. And once I had the suspision that it was probably a dumb move, the project is too far along
+                  and other work needed to be done and submitted that I simply did not have the time to rebuild the
+                  player character and worked with the weird issues anyways.
+                  <br><br>
+                  For the optimisation part of the project, we learnt how to reduce resources and memory used by
+                  allowing players to adjust graphics settings, level streaming, making LODs and HLODs, and optimising
+                  materials and textures by reducing texture sizes and quad overdraws. While Unreal could generate LODs
+                  and HLODs for you, going through all the models used and checking their appearance at different
+                  distances became quite repetitive. I also had to spend a lot of time reducing the amount of foliage I
+                  slapped onto the terrain since foliage usually has a lot of transparency in it's textures, which
+                  significantly increases the overdraw count then increases memory needed to render them. Optimisation
+                  also took around half of the time taken to complete the project from start to finish. It was grueling
+                  work, but I also found it surprising how memory heavy certain types of assets could be, and how
+                  significant the differnce in tri draw count was before and after LODs were made.
+                  <br><br>
+                  Except for the comic "cutscene" that I drew by myself using Krita, all of the assets are gotten from
+                  the Unreal Engine Marketplace. The project is done using Unreal Engine 4.
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <img src="media/avatar.png" class="img-fluid" alt="my avatar" id="avatar">
-
-      <div id="bio">
-        <p>
-          I am a current Game Design and Development student at Rochester Institute of Technology. I am passionate about
-          making games and art as I like creating works and immersive experiences that people can enjoy. During my time
-          at RIT, I have worked on multiple game prototypes with different people in small groups. When I'm not making
-          more art in my free time, I enjoy crocheting, listening to music, and of course playing more games.
-        </p>
-      </div>
     </div>
   </main>
 
   <footer>
     <div id="footer" class="container-lg">
       <div id="contacts">
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:mandy.wong68@gmail.com">mandy.wong68@gmail.com</a>
 
-        <i class="fab fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/man-ting-mandy-wong-375427173/" target="_blank">Man Ting Mandy Wong</a>
+        <a href="mailto:mandy.wong68@gmail.com">
+          <i class="fas fa-envelope"></i>
+          mandy.wong68@gmail.com
+        </a>
 
-        <i class="fab fa-github"></i>
-        <a href="https://github.com/sheroine" target="_blank">sheroine</a>
 
-        <i class="fab fa-instagram"></i>
-        <a href="https://www.instagram.com/sheroine_" target="_blank">@sheroine_</a>
+        <a href="https://www.linkedin.com/in/man-ting-mandy-wong-375427173/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          Man Ting Mandy Wong
+        </a>
 
-        <i class="fab fa-facebook"></i>
-        <a href="https://www.facebook.com/SheroineArt/" target="_blank">@SheroineArt</a>
+        <a href="https://github.com/sheroine" target="_blank">
+          <i class="fab fa-github"></i>
+          sheroine
+        </a>
+
+        <a href="https://www.instagram.com/sheroine_" target="_blank">
+          <i class="fab fa-instagram"></i>
+          @sheroine_
+        </a>
+
+        <a href="https://www.facebook.com/SheroineArt/" target="_blank">
+          <i class="fab fa-facebook"></i>
+          @SheroineArt
+        </a>
       </div>
 
       <div id="notes">
-        <p>This page is made with help of Bootstrap and Font Awesome</p>
         <p>&copy;
           <script>document.write(new Date().getFullYear());</script> Mandy Wong
         </p>

@@ -70,7 +70,11 @@
     margin: auto 0;
 }
 .projectThumbnail { grid-area: thumbnail; }
-.projectDescription { grid-area: description; }
+.projectDescription
+{
+    grid-area: description;
+    margin-right: 1em;
+}
 
 @media only screen and (max-width: 768px)
 {
@@ -94,6 +98,11 @@
     .projectTitle
     {
         text-align: center;
+    }
+
+    .projectDescription
+    {
+        margin-right: 0;
     }
 }
 

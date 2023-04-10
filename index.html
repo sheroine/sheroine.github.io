@@ -43,7 +43,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="media/mandysresume.pdf" target="_blank">Resume</a>
+            <a class="nav-link" href="media/MandyWong_Resume.pdf" target="_blank">Resume</a>
           </li>
 
           <li class="nav-item">
@@ -78,7 +78,93 @@
 
       <div id="portfolio">
         <!-- <p><b>Portfolio editing in progress!</b></p> -->
-        <!-- Academic projects -->
+        <!-- projects -->
+        <!-- Project: One Brain Cell-->
+        <div id="OBC" class="project">
+          <h2 class="projectTitle">One Brain Cell</h2>
+          <a href="#" class="projectThumbnail" data-bs-toggle="modal" data-bs-target="#OBCModal"><img
+              src="media/portfolio/onebraincell/thumbnail.jpg" alt="Leap of Faith thumbnail" class="img-thumbnail"></a>
+          <p class="projectDescription">
+            <b>March 2023</b>
+            <br><br>
+            One Brain Cell is a short game about incredibly stupid creatures made by a "totally normal scientist" trying their best to get to the bread in the center of the test chamber but also eating anything else they come across.
+            <br>
+            It is a game made for a game jam with 3 selected mechanics that participants would try their best to use or be inspired by for their game. To which I interpreted them as making a co-op game with tiles that break as you walk on them, and players lose more times than winning.
+            <br>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#OBCModal">Read more</a>
+          </p>
+        </div>
+        <!-- One brain cell modal -->
+        <div class="modal fade" id="OBCModal" tabindex="-1" aria-labelledby="OBCModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="OBCModalLabel">One Brain Cell</h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <!-- carousel -->
+                <div id="OBCcarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#OBCcarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#OBCcarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#OBCcarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="media/portfolio/onebraincell/iteration2.jpg" class="d-block w-100" alt="iteration 2's game layout">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/onebraincell/eventcards.jpg" class="d-block w-100" alt="iteration 2's event card design">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/portfolio/onebraincell/iteration1.jpg" class="d-block w-100" alt="iteration 1's game layout">
+                    </div>
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#OBCcarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#OBCcarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+                <h4>More about the game</h4>
+                <p>
+                  One Brain Cell was made during the Wpring Game Jam hosted by the Break My Game community. Participants had 2 weeks to make a game, and the selected mechanics this jam were no victories, map reduction, and advantage token.
+                  <br><br>
+                  This resulted in One Brain Cell, where players play as creatures created by a "totally normal scientist" and are really stupid, because they would eat anything they come across and share 1 collective brain cell. The scientist put the creatures into their test chamber to see how they fair against eating different types of "foods" and whatever they decide to throw at them.
+                  <br><br>
+                  The game goes for 2 - 4 players, and players / creatures start on the 4 corners of the rectangular hex grid representing the test chamber. The 7 tiles in the center have bread, and the creatures would try their best to move to it because bread is the only food that would satiate their endless hunger. Most tiles have limited durability and would break behind creatures as they walk along them. Any "food" they eat might have an immediate effect, and all foods that are later discharged from their bodies would have another effect. The advantage token is a literal brain cell that's passed around between players that would allow them to perform 1 of few special actions for the round. For example, spit out some planks to cover up a hole if they have consumed some logs. 1 event card is also drawn after every round to see what the scientist decided to test the creatures with.
+                  <br><br>
+                  On the first iteration shown in the 3rd image, the whole map had to be assembled tile by tile randomly with the 3 tile type, then also place all the food items in. It made set up time really long and tedious and is especially bad for a game that is intended to be a quick death game. So all tiles start off unknown in the second iteration, which makes set up just be removing everything from the mat and placing the meeples on the 4 corners. Event cards were also added to add another type of randomness to the game, and also brings in the presence of the scientist more. The meeples were also changed to be directional, and would point in the direction of where creatures are moving in. The direction would be important for some of the foods' effects as to which tile relative to the creature's direction would it go onto.
+                </p>
+
+                <h4>My work</h4>
+                <p>
+                  I made 3 different tile types with different durabilities, using different amounts of lines and color for players to easily differentiate them. There's also a cracked texture tile that is transparent, and it is made to be placed on top of tiles with more durability than 1. This way players can track which tiles have been traversed on before, and know that the tile now only has 1 durability left and is about to break.
+                  <br><br> 
+                  The planks and glue splatter both used to be special tiles that are uniquely shaped, because they were the only 2 kinds of special tiles that would modify other tiles. But then they were placed on the back side of the food tile tokens, because the rest of the available food items all have an effect after being discharged from a creature's body. In addition, the food tiles are just directly drawn from a hidden box in iteration 2 instead of laid out face down on the map on iteration 1, so the mystery food symbol with the '?' is no longer needed.
+                  <br><br>
+                  Then the event cards are designed with a sci-fi aesthetic since the theme and setting of the game is in a scientist's laboratory test chamber. I imagined that the event cards are data logs from the scientist noting down their observations of how the creatures reacted to their tests. Therefore the cards also resemble creature entry logs from other sci-fi games, and I added a little personal note from the scientist at the bottom right to help with that immersion.
+                  <br><br>
+                  The rest of the components are built in components provided by Tabletop Playground, which is the tabletop game tool I'm using to make this game with. It has an editor that allows me to import the art assets I made for the jam and set them to be different types of hex tiles, and make a custom deck of cards for the event deck. It also provided the boxes, dice, counters, meeples, and table that the game is placed on. All assets are made in Krita by me (except for the blob fish image which is a creative commons licensed image). And if you have Tabletop Playground and a mod.io account, you can check out the game <a target="_blank" href="https://mod.io/g/tabletopplayground/m/one-brain-cell">here!</a>
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Project: Leap of Faith-->
         <div id="LoF" class="project">
           <h2 class="projectTitle">Leap of Faith</h2>
@@ -89,7 +175,7 @@
             <br><br>
             Leap of Faith is a tabletop game prototype about amphibians at the end of the world competing against each other to run the best cult of them all. In hopes that their god would be appeased and spare their little souls from the impending doom on Earth. 
             <br>
-            It is an engine builder card game, where players would compete and build their own cult that would generate vast amounts of resources, be it fly tokens to get rich, or followers to perform seances for more self benefits or hinder other players.
+            It is an engine builder card game, where players would compete and build their own cult that would generate vast amounts of resources to get rich in Fly Tokens and Followers to advance your engine and power.
             <br>
             <i>We are currently continuing to develop and playtest the game!</i>
             <br>
@@ -116,55 +202,23 @@
                     <button type="button" data-bs-target="#LoFcarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="#LoFcarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     <button type="button" data-bs-target="#LoFcarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#LoFcarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#LoFcarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                    <button type="button" data-bs-target="#LoFcarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                    <button type="button" data-bs-target="#LoFcarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                    <button type="button" data-bs-target="#LoFcarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
-                    <button type="button" data-bs-target="#LoFcarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
-                    <button type="button" data-bs-target="#LoFcarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
-                    <button type="button" data-bs-target="#LoFcarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
                   </div>
 
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="media/portfolio/leapoffaith/boxfront.png" class="d-block w-100" alt="box front design">
+                      <img src="media/portfolio/leapoffaith/playerboard.png" class="d-block w-100" alt="player board start set up">
                     </div>
                     <div class="carousel-item">
-                      <img src="media/portfolio/leapoffaith/boxback.png" class="d-block w-100" alt="box back design">
+                      <img src="media/portfolio/leapoffaith/devotionboard.png" class="d-block w-100" alt="devotion board start set up">
                     </div>
                     <div class="carousel-item">
-                      <img src="media/portfolio/leapoffaith/components.png" class="d-block w-100" alt="game components and card backs">
+                      <img src="media/portfolio/leapoffaith/tokens.png" class="d-block w-100" alt="Round counter token and Follower meeples">
                     </div>
                     <div class="carousel-item">
-                      <img src="media/portfolio/leapoffaith/allcards1.png" class="d-block w-100" alt="cards laid out">
+                      <img src="media/portfolio/leapoffaith/sampleplayarea.png" class="d-block w-100" alt="example play area appearance">
                     </div>
                     <div class="carousel-item">
-                      <img src="media/portfolio/leapoffaith/allcards2.png" class="d-block w-100" alt="cards laid out">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/portfolio/leapoffaith/buildingcards.png" class="d-block w-100" alt="all building cards">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/portfolio/leapoffaith/donationcards.png" class="d-block w-100" alt="all donation cards">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/portfolio/leapoffaith/magiccards1.png" class="d-block w-100" alt="7 different seance cards; 1 card is accidentally duplicated">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/portfolio/leapoffaith/magiccards2.png" class="d-block w-100" alt="7 seance cards">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/portfolio/leapoffaith/milestones1.png" class="d-block w-100" alt="6 milestone cards">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/portfolio/leapoffaith/milestones2.png" class="d-block w-100" alt="6 milestone cards">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/portfolio/leapoffaith/milestones3.png" class="d-block w-100" alt="6 milestone cards">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="media/portfolio/leapoffaith/milestones4.png" class="d-block w-100" alt="5 milestone cards">
+                      <img src="media/portfolio/leapoffaith/samplemilestones.png" class="d-block w-100" alt="example minestone cards appearance">
                     </div>
                   </div>
 
@@ -180,35 +234,20 @@
 
                 <h4>More about the game</h4>
                 <p>
-                  The manufactured prototype version of this game was done in roughly 2 months as a class project. We took inspiration from Wingspan and decided to make an engine builder game, with aims to make it more interactive between players than Wingspan does, especially between turns. Why frogs and cults though? Well frogs are cool, and cults are... cults. They're fun when it's a game and you get to make one, so we basically just smacked them together and we have a goofy and enjoyable theme.
+                  Leap of Faith is an engine building card game for 2 - 4 players. Players play as frog leaders of their own cults. They will compete to build the best cult ever to generate the most resources to appease the God, for there is a calamity rapidly approaching. A fire that will soon wipe their entire existence, so best to be the first to appease the God and gain their favor: a grant for mass ascension, and escape the otherwise firey demise.
                   <br><br>
-                  This game is for 3 - 6 players. There are 4 decks of cards in the center: yellow donation cards, green building cards, purple seance cards, and red milestone cards. Donation, building, and seance cards go into the players' hands, while milestone cards always stay on the table. Players would start with 1 of each card in their hand except for milestone cards. Donation and Building cards are paid for with fly tokens and will be played in front of the player. Donation cards generate fly tokens, while building cards would generate anything else, likegetting more followers, drawing more cards, getting more action points etc. Those cards have different effects that trigger at different times and conditions. Players would want to find cards that synergise with each other and thus build their engine to generate resources.
-                  <br>
-                  There are also white cubes and green cubes provided and they are action cubes and follower cubes respectively. Some actions require players to use a white action cube along other resources, such as buying more action cubes, gain a new follower, draw a new card etc. Players start with 3 of them, and can buy more or gain from card effects. Action cubes are only used and not discarded, used action cubes will be available again on players' next turn.
-                  <br>
-                  Green follower cubes are used to play the purple seance cards, the last card type that goes into players' hands, or level up cards on the player's field. There are boxes on donation and building cards, and that's where the follower cubes belong, filling up each column from left to right to gain stronger card effects. Players would spend 1 action cube to place 1 follower cube onto a card. Playing seance cards would cost follower cubes <i>not</i> on a card, but they won't be sacrificed unless otherwise stated. They will just be used like action cubes, and would be available again next turn to cast more spells.
-                  <br>
-                  Lastly, at most 2 milestone cards are revealed to players at a time and they are goals that players would want to meet. Once the milestone is met, the player will claim the milestone and a new one will be flipped over on the next player's turn. These cards' numbers correspond to player score. The first player to reach 10 milestone points gains the favor of their god wins the game.
+                  Players each have a player board representing the common area of their cult. It shows actions that players can take using their Followers in their cult, and their cult's Influence and Suspicion. The rest of their play area, typically the table space to the right of the player board, is where the cult's functional buildings are erected, aka the cards that form your resource generation engine. Players can also upgrade their cards permanently by assigning Followers onto the cards too. There's currently 2 types of cards in the game: Donation cards that generate Fly Tokens, the currency of the game; and Building cards that attract new Followers to your cult passively. They are drawn from the center Devotion board. The Devotion board also holds Cult-Milestones provided by the God. Completing them will advance players on the Devotion track also found on the Devotion board. Any player reaching at least 50 Devotion, or if the round counter reaches 12, the game will end and the final tally begins. The player with the highest Final Devotion gains the favor of the God, is granted ascension, and wins the game.
                 </p>
 
                 <h4>My work</h4>
                 <p>
-                  This project is a group academic project of 6 people: Matthew Jacobs, <a href="https://www.linkedin.com/in/zachary-sheikh-b47772192/" target="_blank">Zach Sheikh</a>, <a href="https://www.linkedin.com/in/thomas-siwanowicz-04a774192" target="_blank">Thomas Siwanowicz</a>, <a href="https://www.artstation.com/juliatennant" target="_blank">Julia Tennant</a>, Zhao Xuanang, and me. Julia is an illustrator that we asked help from later in development to help with finishing card illustrations. The rest of us 5 developed the game from start to finish, and running playtests to balance and tweak the game. I was also responsible for designing the fly tokens, solidifying card layout designs, card back illustrations, and over half of the card face illustrations.
-                  <br>
-                  We started with a paper prototype and just threw out card effect ideas, then printed them out. We first had internal playtests to smooth out the game mechanics and system, scrapping things like the follower deck, and iterating on the building and magic deck. When the game got a little more stable and playable, we brought it to Crash Test, which is a club at RIT that allows people to bring in tabletop game prototypes to be playtested. We hosted a multitude of tests, both local and blind playtests, and were able to collect a lot of feedback and helpful advice or suggestions players had. Then eventually the game evolved to now have simple follower cubes, and upgradable cards.
-                  <br>
-                  The development of the game was our main focus, and we decided to wait until our card effects were more stable and set before we made any artwork for them, since the card illustrations are based on the cards' names and effects. While this prevented us from having to scrap artwork, this caused us a huge time crunch for me and Matt, the artists of the team, to produce unique illustrations for 53 cards. I managed to illustrate all the donation and building card faces, 5 magic card faces, 9 milestone card faces, the 4 card types' card backs, and the fly tokens. Matt designed the box art and some of the card faces, and Julia really helped reduce our load by helping with the rest of the card illustrations. Despite several delays, we still managed to finish all the art in time for our manufacture order to arrive before we showcased it at ImagineRIT, then the semester end showcase for our class.
+                  This started off as a class project where 6 of us contributed to different parts of it, and had 1 physical copy of the prototype manufactured. Afterwards, 3 of us decided to continue to work on the game for a short while. And now I am the current solo developer of this tabletop game.
                   <br><br>
-                  Illustrations were done using Krita, some layouts were done in Photoshop.
-                </p>
-
-                <h4>Current work</h4>
-                <p>
-                  Despite this being a class project, Thomas, Zach, Matt, and I felt that our game has potential and is genuinely fun to play, so we decided to contiue it's development and take it further. We are currently running a small public discord server to host playtests, and provide updates on our development. Thomas, Zach, and I have been meeting biweekly during the summer, hosting playtests on Friday night and collecting feedback, and then discussing and applying changes using that feedback on Monday nights, while Matt is developing a website for our game. We ported our game into Tabletop Simulator to allow all of us to host and join the tests remotely.
-                  <br>
-                  Our current new development progress with the game is that we have a bunch of new cards and effects being implemented and tested, that has more impact on players between their turn. Have a somewhat working solution on making earning milestone points less dependent on RNG. And our biggest fix we are trying to achieve currently is to properly reward players who successfully built an engine, since we have noticed a trend that our current system seems to favor players who earned a large sum of money in a short period of time, and subsequently buying a win without needing an engine at all.
+                  Since the prorotype version that came out of our class, we have expanded on the player board to what it is today, and continuously changed and tweaked card effects and number balances. There exists the Devotion board now, and the scoring system has undergone a few changes. There used to be a third deck the functions differently than the other 2 decks, but they've continuously caused issues one way or another, and is hard to balance. So eventually I removed it entirely, also because the game is fully functional without them just fine. Though I would like to try and add them back under the same name but with an entirely different function later on.
                   <br><br>
-                  We aren't nearly close to this step yet, but we aim to eventually publish this game of ours as a fully fledged and polished engine building game.
+                  I've joined a few online board game communities to be able to playtest the ongoing development of the game. I also currently manage the Instagram and Facebook page regarding the development of the game as well. There's also new looks and designs for the cards currently, although the card art is temporary, since they are made from creative commons licensed images edited together. Those would have to remade at a later date as not all the images I found could be used commercially, and I'd like to properly make some nice art for them once the mechanics are a bit more stable anyways. All of the new art seen on the components are made by me in Krita, though the box art seen on the entry thumbnail is still the previously used art done by Matt while we were in class.
+                  <br><br>
+                  The game is also digitised to facilitate online playtesting and is available on both Tabletop Playground and Tabletop Simulator. The shown images are taken from Tabletop Playground, which is the main tabletop game tool I'm using. If you have a Tabletop Playground and mod.io account, you can check out the game <a target="_blank" href="https://mod.io/g/tabletopplayground/m/leap-of-faith4">here!</a> Or if you have Tabletop Simulator you can check it out <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2900266863">here!</a>
                 </p>
               </div>
 

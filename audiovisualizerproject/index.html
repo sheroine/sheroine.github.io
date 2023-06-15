@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Visualizer</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link href="styles/index.css" type="text/css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js" integrity="sha256-HJ7j+71YYw6Kcs8THwQV9lXmPOcR0eXlg7n8KRTZsyA=" crossorigin="anonymous"></script>
+    <script src="./src/loader.js" type="module"></script>
+</head>
+<body>
+    <main>
+		<h1 id="title" data-isgame="false"></h1>
+		<div id="displayItems">
+			<progress id="progressBar" value="0" max="0"></progress>
+        	<canvas width="960" height="540"></canvas>
+		</div>
+
+	<div id="controls">
+		<section>
+			<button id="playButton" data-playing="no"></button>
+			<button id="fsButton">Full Screen</button>
+		</section>
+		
+		<section>
+
+		  <section>
+			<section id="gameControls" data-isgame="false">
+				<label> Player Select:
+					<select id="playerSelect">
+						<option value="blue">Blue</option>
+						<option value="yellow">Yellow</option>
+						<option value="green">Green</option>
+						<option value="orange">Orange</option>
+					</select>
+				</label>
+				
+				<table id="statsTable">
+					<tr>
+						<th>Stats</th>
+					</tr>
+
+					<tr>
+						<td>Hits</td>
+						<td>0</td>
+					</tr>
+
+					<tr>
+						<td>Dashes</td>
+						<td>0</td>
+					</tr>
+
+					<tr>
+						<td>Rank</td>
+						<td>S</td>
+					</tr>
+				</table>
+			</section>
+		  </section>
+	</div>
+    </main>
+</body>
+<footer>
+	<h2>Documentation</h2>
+	<p>This is a project by Mandy Wong and Joseph Hong.</p>
+	<ol>
+		<li>Our inspiration was from a game called "Just Shapes and Beats" and we feel confident 
+			that we tried well to imitate to its layout. The visual looks clean and simple yet there 
+			are a lot of movements going on and 3 songs have different layouts so there is quality shown.
+			The UI is not too complex and all of the controls needed for this project is in the GUI on the 
+			top right. We followed the instructions in terms of media and code structure as well.
+			However we didn't have radio button groups, because it is not an option in dat.gui. Originally we had radio buttons that let users pick between viewing frequency data or waveform data, we changed it to a dropdown selection insteaad because of dat.gui.</li>
+		<li>We attempted to make this project into a game, just like the original where the player
+			can move with keyboard and dodge bullets (or anything in solid color) that spawn to the beat of 
+			the music. While the bullet spawning worked well, we struggled to finish other gaming elements
+			such as collision detection due to limitations of our time. We replaced 
+			keyboard to mouse inputs but collision detection and score is not done.
+			We do know, however, that we will work on this after the submission so it looks more like a game. There is one bug with the player selection, the player keeps defaulting back to Blue when you switch tracks before you start the music. The distortion also doesn't work as of now.
+		</li>
+		<li>I think not implementing more complex stylish effects to the visualizer and instead investing our time 
+			to gamify this project is what didn't go well; even though we had good ideas and plans to make it happen,
+			it didn't happen, for now. What went well, however, is working and communicating together and making
+			something that we want to continue making after submission. Also, the basic requirements were mostly done 
+			so checking off our list went well too.
+		</li>
+		<li>Since we put a lot of our time into this project and even though our promise of making this into a game wasn't fully kept, 
+			looking this as a audio visualizer, we think we deserve between 85-90.
+		</li>
+	</ol>
+    <h2>Credits</h2>
+    <p>
+        Music: Tobu & Jordan Kelvin James - Summer Breeze   <br>
+        <a href="http://youtube.com/tobuofficial">http://youtube.com/tobuofficial</a>   <br>
+		<a href="https://soundcloud.com/jordankelvinjames">https://soundcloud.com/jordankelvinjames</a>	<br>
+		<br>
+		Music: Tobu - Candyland pt. II	<br>
+		<a href="http://youtube.com/tobuofficial">http://youtube.com/tobuofficial</a>	<br>
+		<br>
+		Music: Tobu & Itro - Fantasy	<br>
+		<a href="https://www.youtube.com/watch?v=-eC9snfGpJY">https://www.youtube.com/watch?v=-eC9snfGpJY</a>	<br>
+		<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>	<br>
+		<br>
+		This project is inspired by the game Just Shapes & Beats	<br>
+		<a href="https://store.steampowered.com/app/531510/Just_Shapes__Beats/">https://store.steampowered.com/app/531510/Just_Shapes__Beats/</a>
+
+    </p>
+</footer>
+</html>

@@ -1,0 +1,116 @@
+body {
+  background: #001a1b;
+  font-family: 'Poppins', tahoma, verdana, sans-serif;
+  color: #fff;
+}
+
+canvas {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+	background: #000000;
+}
+
+#controls{
+  margin-left: 1rem;
+}
+
+section{
+  margin-bottom: 1rem;
+}
+
+#playButton{
+  font-size: 1.2rem;
+  width: 6rem;
+}
+
+button[data-playing="yes"]:after{
+  content: "Pause";
+}
+
+button[data-playing="no"]:after{
+  content: "Play";
+}
+
+#fsButton{
+  font-size: 1.2rem;
+  width: 8rem;
+}
+
+h1, h2
+{
+  padding: 1rem;
+  background-color: #11d8d8;
+}
+
+h1
+{
+  margin-block-start: 0;
+}
+
+#title[data-isgame="false"]::after
+{
+  content: "Audio Visualizer";
+}
+
+#title[data-isgame="true"]::after
+{
+  content: "Just Visuals and Audio";
+}
+
+#gameControls[data-isgame="false"]
+{
+  display: none;
+}
+
+button
+{
+  background-color: #0eaaaa;
+  color: #fff;
+  border-style: none;
+  padding: .5rem;
+  font: inherit;
+}
+
+a:link
+{
+  color: #08ffff;
+}
+
+a:visited
+{
+  color: #e80771;
+}
+
+a:hover
+{
+  color: #649cc1;
+}
+
+a:active
+{
+  color: #a84c97;
+}
+
+#displayItems
+{
+  margin-left: 1rem;
+  width: 960px;
+}
+
+progress
+{
+  display: block;
+  border-radius: 2px; 
+  width: 800px;
+  height: 15px;
+  margin: auto;
+}
+progress::-webkit-progress-bar
+{
+  background-color: #005a5e77;
+}
+progress::-webkit-progress-value
+{
+  background-color: #08ffff;
+}

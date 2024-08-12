@@ -66,11 +66,13 @@ a:hover, a:focus
 a
 {
     color: #8C368F;
+    font-weight: bold;
 }
 
 footer a
 {
     text-decoration: none;
+    font-weight: normal;
 }
 
 a:active
